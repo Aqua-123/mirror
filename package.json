@@ -1,0 +1,15 @@
+{
+  "name": "mirror",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "N/A",
+  "private": true,
+  "dependencies": {
+    "js-beautify": "^1.14.0",
+    "website-scraper": "^4.2.3"
+  },
+  "scripts": {
+    "mirror": "rm -rf site && ./mirror.mjs",
+    "pretty": "js-beautify -f site/js/application-*.js -o app/application.js"
+  }
+}
