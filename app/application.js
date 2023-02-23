@@ -1341,6 +1341,86 @@ function _inherits(e, t) {
         }
     }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
+
+function _classCallCheck(e, t) {
+    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
+}
+
+function _inherits(e, t) {
+    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+    e.prototype = Object.create(t && t.prototype, {
+        constructor: {
+            value: e,
+            enumerable: !1,
+            writable: !0,
+            configurable: !0
+        }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+}
+
+function _classCallCheck(e, t) {
+    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
+}
+
+function _inherits(e, t) {
+    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+    e.prototype = Object.create(t && t.prototype, {
+        constructor: {
+            value: e,
+            enumerable: !1,
+            writable: !0,
+            configurable: !0
+        }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+}
+
+function _classCallCheck(e, t) {
+    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
+}
+
+function _inherits(e, t) {
+    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+    e.prototype = Object.create(t && t.prototype, {
+        constructor: {
+            value: e,
+            enumerable: !1,
+            writable: !0,
+            configurable: !0
+        }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+}
+
+function _classCallCheck(e, t) {
+    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
+}
+
+function _inherits(e, t) {
+    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+    e.prototype = Object.create(t && t.prototype, {
+        constructor: {
+            value: e,
+            enumerable: !1,
+            writable: !0,
+            configurable: !0
+        }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+}
+
+function _classCallCheck(e, t) {
+    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
+}
+
+function _inherits(e, t) {
+    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+    e.prototype = Object.create(t && t.prototype, {
+        constructor: {
+            value: e,
+            enumerable: !1,
+            writable: !0,
+            configurable: !0
+        }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+}
 var App = {};
 ! function(e, t) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = e.document ? t(e, !0) : function(e) {
@@ -1487,8 +1567,8 @@ var App = {};
         for (var i, o, s, c, l, u, d, p = e.length, v = f(t), g = [], b = 0; b < p; b++)
             if ((o = e[b]) || 0 === o)
                 if ("object" === fe.type(o)) fe.merge(g, o.nodeType ? [o] : o);
-                else if (qe.test(o)) {
-            for (c = c || v.appendChild(t.createElement("div")), l = (Fe.exec(o) || ["", ""])[1].toLowerCase(), d = He[l] || He._default, c.innerHTML = d[1] + fe.htmlPrefilter(o) + d[2], i = d[0]; i--;) c = c.lastChild;
+                else if (He.test(o)) {
+            for (c = c || v.appendChild(t.createElement("div")), l = (Fe.exec(o) || ["", ""])[1].toLowerCase(), d = qe[l] || qe._default, c.innerHTML = d[1] + fe.htmlPrefilter(o) + d[2], i = d[0]; i--;) c = c.lastChild;
             if (!de.leadingWhitespace && Ge.test(o) && g.push(t.createTextNode(Ge.exec(o)[0])), !de.tbody)
                 for (o = "table" !== l || We.test(o) ? "<table>" !== d[1] || We.test(o) ? 0 : c : c.firstChild, i = o && o.childNodes.length; i--;) fe.nodeName(u = o.childNodes[i], "tbody") && !u.childNodes.length && o.removeChild(u);
             for (fe.merge(g, c.childNodes), c.textContent = ""; c.firstChild;) c.removeChild(c.firstChild);
@@ -1763,11 +1843,11 @@ var App = {};
         })), l.progress(l.opts.progress).done(l.opts.done, l.opts.complete).fail(l.opts.fail).always(l.opts.always)
     }
 
-    function H(e) {
+    function q(e) {
         return fe.attr(e, "class") || ""
     }
 
-    function q(e) {
+    function H(e) {
         return function(t, n) {
             "string" != typeof t && (n = t, t = "*");
             var r, a = 0,
@@ -2084,7 +2164,7 @@ var App = {};
                     } else {
                         if (l[2]) return Q.apply(n, t.getElementsByTagName(e)), n;
                         if ((a = l[3]) && w.getElementsByClassName && t.getElementsByClassName) return Q.apply(n, t.getElementsByClassName(a)), n
-                    } if (w.qsa && !q[e + " "] && (!A || !A.test(e))) {
+                    } if (w.qsa && !H[e + " "] && (!A || !A.test(e))) {
                     if (1 !== h) m = t, f = e;
                     else if ("object" !== t.nodeName.toLowerCase()) {
                         for ((s = t.getAttribute("id")) ? s = s.replace(be, "\\$&") : t.setAttribute("id", s = U), d = C(e), i = d.length, c = pe.test(s) ? "#" + s : "[id='" + s + "']"; i--;) d[i] = c + " " + p(d[i]);
@@ -2291,8 +2371,8 @@ var App = {};
             $ = 0,
             G = 0,
             z = n(),
-            H = n(),
             q = n(),
+            H = n(),
             W = function(e, t) {
                 return e === t && (N = !0), 0
             },
@@ -2397,7 +2477,8 @@ var App = {};
             }, R.find.CLASS = w.getElementsByClassName && function(e, t) {
                 if ("undefined" != typeof t.getElementsByClassName && D) return t.getElementsByClassName(e)
             }, I = [], A = [], (w.qsa = ye.test(j.querySelectorAll)) && (a(function(e) {
-                M.appendChild(e).innerHTML = "<a id='" + U + "'></a><select id='" + U + "-\r\\' msallowcapture=''><option selected=''></option></select>", e.querySelectorAll("[msallowcapture^='']").length && A.push("[*^$]=" + ne + "*(?:''|\"\")"), e.querySelectorAll("[selected]").length || A.push("\\[" + ne + "*(?:value|" + te + ")"), e.querySelectorAll("[id~=" + U + "-]").length || A.push("~="), e.querySelectorAll(":checked").length || A.push(":checked"), e.querySelectorAll("a#" + U + "+*").length || A.push(".#.+[+~]")
+                M.appendChild(e).innerHTML = "<a id='" + U + "'></a><select id='" + U + "-\r\\' msallowcapture=''><option selected=''></option></select>", e.querySelectorAll("[msallowcapture^='']").length && A.push("[*^$]=" + ne + "*(?:''|\"\")"), e.querySelectorAll("[selected]").length || A.push("\\[" + ne + "*(?:value|" + te + ")"), e.querySelectorAll("[id~=" + U + "-]").length || A.push("~="), e.querySelectorAll(":checked").length || A.push(":checked"),
+                    e.querySelectorAll("a#" + U + "+*").length || A.push(".#.+[+~]")
             }), a(function(e) {
                 var t = j.createElement("input");
                 t.setAttribute("type", "hidden"), e.appendChild(t).setAttribute("name", "D"), e.querySelectorAll("[name=d]").length && A.push("name" + ne + "*[*^$|!~]?="), e.querySelectorAll(":enabled").length || A.push(":enabled", ":disabled"), e.querySelectorAll("*,:x"), A.push(",.*:")
@@ -2433,7 +2514,7 @@ var App = {};
         }, t.matches = function(e, n) {
             return t(e, null, null, n)
         }, t.matchesSelector = function(e, n) {
-            if ((e.ownerDocument || e) !== j && P(e), n = n.replace(ue, "='$1']"), w.matchesSelector && D && !q[n + " "] && (!I || !I.test(n)) && (!A || !A.test(n))) try {
+            if ((e.ownerDocument || e) !== j && P(e), n = n.replace(ue, "='$1']"), w.matchesSelector && D && !H[n + " "] && (!I || !I.test(n)) && (!A || !A.test(n))) try {
                 var r = B.call(e, n);
                 if (r || w.disconnectedMatch || e.document && 11 !== e.document.nodeType) return r
             } catch (e) {}
@@ -2682,7 +2763,7 @@ var App = {};
                 reset: !0
             }) R.pseudos[E] = c(E);
         return d.prototype = R.filters = R.pseudos, R.setFilters = new d, C = t.tokenize = function(e, n) {
-            var r, a, i, o, s, c, l, u = H[e + " "];
+            var r, a, i, o, s, c, l, u = q[e + " "];
             if (u) return n ? 0 : u.slice(0);
             for (s = e, c = [], l = R.preFilter; s;) {
                 r && !(a = ce.exec(s)) || (a && (s = s.slice(a[0].length) || s), c.push(i = [])), r = !1, (a = le.exec(s)) && (r = a.shift(), i.push({
@@ -2696,14 +2777,14 @@ var App = {};
                 }), s = s.slice(r.length));
                 if (!r) break
             }
-            return n ? s.length : s ? t.error(e) : H(e, c).slice(0)
+            return n ? s.length : s ? t.error(e) : q(e, c).slice(0)
         }, x = t.compile = function(e, t) {
             var n, r = [],
                 a = [],
-                i = q[e + " "];
+                i = H[e + " "];
             if (!i) {
                 for (t || (t = C(e)), n = t.length; n--;) i = g(t[n]), i[U] ? r.push(i) : a.push(i);
-                i = q(e, b(a, r)), i.selector = e
+                i = H(e, b(a, r)), i.selector = e
             }
             return i
         }, O = t.select = function(e, t, n, r) {
@@ -3182,7 +3263,7 @@ var App = {};
             n = re.createElement("input");
         e.innerHTML = "  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>", de.leadingWhitespace = 3 === e.firstChild.nodeType, de.tbody = !e.getElementsByTagName("tbody").length, de.htmlSerialize = !!e.getElementsByTagName("link").length, de.html5Clone = "<:nav></:nav>" !== re.createElement("nav").cloneNode(!0).outerHTML, n.type = "checkbox", n.checked = !0, t.appendChild(n), de.appendChecked = n.checked, e.innerHTML = "<textarea>x</textarea>", de.noCloneChecked = !!e.cloneNode(!0).lastChild.defaultValue, t.appendChild(e), n = re.createElement("input"), n.setAttribute("type", "radio"), n.setAttribute("checked", "checked"), n.setAttribute("name", "t"), e.appendChild(n), de.checkClone = e.cloneNode(!0).cloneNode(!0).lastChild.checked, de.noCloneEvent = !!e.addEventListener, e[fe.expando] = 1, de.attributes = !e.getAttribute(fe.expando)
     }();
-    var He = {
+    var qe = {
         option: [1, "<select multiple='multiple'>", "</select>"],
         legend: [1, "<fieldset>", "</fieldset>"],
         area: [1, "<map>", "</map>"],
@@ -3193,8 +3274,8 @@ var App = {};
         td: [3, "<table><tbody><tr>", "</tr></tbody></table>"],
         _default: de.htmlSerialize ? [0, "", ""] : [1, "X<div>", "</div>"]
     };
-    He.optgroup = He.option, He.tbody = He.tfoot = He.colgroup = He.caption = He.thead, He.th = He.td;
-    var qe = /<|&#?\w+;/,
+    qe.optgroup = qe.option, qe.tbody = qe.tfoot = qe.colgroup = qe.caption = qe.thead, qe.th = qe.td;
+    var He = /<|&#?\w+;/,
         We = /<tbody/i;
     ! function() {
         var t, n, r = re.createElement("div");
@@ -3571,7 +3652,7 @@ var App = {};
                     n = 0,
                     r = this.length;
                 if (e === undefined) return 1 === t.nodeType ? t.innerHTML.replace(Qe, "") : undefined;
-                if ("string" == typeof e && !tt.test(e) && (de.htmlSerialize || !Ze.test(e)) && (de.leadingWhitespace || !Ge.test(e)) && !He[(Fe.exec(e) || ["", ""])[1].toLowerCase()]) {
+                if ("string" == typeof e && !tt.test(e) && (de.htmlSerialize || !Ze.test(e)) && (de.leadingWhitespace || !Ge.test(e)) && !qe[(Fe.exec(e) || ["", ""])[1].toLowerCase()]) {
                     e = fe.htmlPrefilter(e);
                     try {
                         for (; n < r; n++) t = this[n] || {}, 1 === t.nodeType && (fe.cleanData(m(t, !1)), t.innerHTML = e);
@@ -4128,11 +4209,11 @@ var App = {};
         addClass: function(e) {
             var t, n, r, a, i, o, s, c = 0;
             if (fe.isFunction(e)) return this.each(function(t) {
-                fe(this).addClass(e.call(this, t, H(this)))
+                fe(this).addClass(e.call(this, t, q(this)))
             });
             if ("string" == typeof e && e)
                 for (t = e.match(Se) || []; n = this[c++];)
-                    if (a = H(n), r = 1 === n.nodeType && (" " + a + " ").replace(Lt, " ")) {
+                    if (a = q(n), r = 1 === n.nodeType && (" " + a + " ").replace(Lt, " ")) {
                         for (o = 0; i = t[o++];) r.indexOf(" " + i + " ") < 0 && (r += i + " ");
                         s = fe.trim(r), a !== s && fe.attr(n, "class", s)
                     } return this
@@ -4140,12 +4221,12 @@ var App = {};
         removeClass: function(e) {
             var t, n, r, a, i, o, s, c = 0;
             if (fe.isFunction(e)) return this.each(function(t) {
-                fe(this).removeClass(e.call(this, t, H(this)))
+                fe(this).removeClass(e.call(this, t, q(this)))
             });
             if (!arguments.length) return this.attr("class", "");
             if ("string" == typeof e && e)
                 for (t = e.match(Se) || []; n = this[c++];)
-                    if (a = H(n), r = 1 === n.nodeType && (" " + a + " ").replace(Lt, " ")) {
+                    if (a = q(n), r = 1 === n.nodeType && (" " + a + " ").replace(Lt, " ")) {
                         for (o = 0; i = t[o++];)
                             for (; r.indexOf(" " + i + " ") > -1;) r = r.replace(" " + i + " ", " ");
                         s = fe.trim(r), a !== s && fe.attr(n, "class", s)
@@ -4154,18 +4235,18 @@ var App = {};
         toggleClass: function(e, t) {
             var n = typeof e;
             return "boolean" == typeof t && "string" === n ? t ? this.addClass(e) : this.removeClass(e) : fe.isFunction(e) ? this.each(function(n) {
-                fe(this).toggleClass(e.call(this, n, H(this), t), t)
+                fe(this).toggleClass(e.call(this, n, q(this), t), t)
             }) : this.each(function() {
                 var t, r, a, i;
                 if ("string" === n)
                     for (r = 0, a = fe(this), i = e.match(Se) || []; t = i[r++];) a.hasClass(t) ? a.removeClass(t) : a.addClass(t);
-                else e !== undefined && "boolean" !== n || (t = H(this), t && fe._data(this, "__className__", t), fe.attr(this, "class", t || !1 === e ? "" : fe._data(this, "__className__") || ""))
+                else e !== undefined && "boolean" !== n || (t = q(this), t && fe._data(this, "__className__", t), fe.attr(this, "class", t || !1 === e ? "" : fe._data(this, "__className__") || ""))
             })
         },
         hasClass: function(e) {
             var t, n, r = 0;
             for (t = " " + e + " "; n = this[r++];)
-                if (1 === n.nodeType && (" " + H(n) + " ").replace(Lt, " ").indexOf(t) > -1) return !0;
+                if (1 === n.nodeType && (" " + q(n) + " ").replace(Lt, " ").indexOf(t) > -1) return !0;
             return !1
         }
     }), fe.each("blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu".split(" "), function(e, t) {
@@ -4199,8 +4280,8 @@ var App = {};
         return n && n.documentElement && !n.getElementsByTagName("parsererror").length || fe.error("Invalid XML: " + t), n
     };
     var zt = /#.*$/,
-        Ht = /([?&])_=[^&]*/,
-        qt = /^(.*?):[ \t]*([^\r\n]*)\r?$/gm,
+        qt = /([?&])_=[^&]*/,
+        Ht = /^(.*?):[ \t]*([^\r\n]*)\r?$/gm,
         Wt = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
         Vt = /^(?:GET|HEAD)$/,
         Jt = /^\/\//,
@@ -4253,8 +4334,8 @@ var App = {};
         ajaxSetup: function(e, t) {
             return t ? V(V(e, fe.ajaxSettings), t) : V(fe.ajaxSettings, e)
         },
-        ajaxPrefilter: q(Xt),
-        ajaxTransport: q(Kt),
+        ajaxPrefilter: H(Xt),
+        ajaxTransport: H(Kt),
         ajax: function(t, n) {
             function r(t, n, r, a) {
                 var i, d, g, b, w, _ = n;
@@ -4277,7 +4358,7 @@ var App = {};
                         var t;
                         if (2 === E) {
                             if (!d)
-                                for (d = {}; t = qt.exec(s);) d[t[1].toLowerCase()] = t[2];
+                                for (d = {}; t = Ht.exec(s);) d[t[1].toLowerCase()] = t[2];
                             t = d[e.toLowerCase()]
                         }
                         return null == t ? null : t
@@ -4306,7 +4387,7 @@ var App = {};
                     }
                 };
             if (h.promise(R).complete = y.add, R.success = R.done, R.error = R.fail, p.url = ((t || p.url || Zt) + "").replace(zt, "").replace(Jt, en[1] + "//"), p.type = n.method || n.type || p.method || p.type, p.dataTypes = fe.trim(p.dataType || "*").toLowerCase().match(Se) || [""], null == p.crossDomain && (a = Yt.exec(p.url.toLowerCase()), p.crossDomain = !(!a || a[1] === en[1] && a[2] === en[2] && (a[3] || ("http:" === a[1] ? "80" : "443")) === (en[3] || ("http:" === en[1] ? "80" : "443")))), p.data && p.processData && "string" != typeof p.data && (p.data = fe.param(p.data, p.traditional)), W(Xt, p, n, R), 2 === E) return R;
-            l = fe.event && p.global, l && 0 == fe.active++ && fe.event.trigger("ajaxStart"), p.type = p.type.toUpperCase(), p.hasContent = !Vt.test(p.type), o = p.url, p.hasContent || (p.data && (o = p.url += ($t.test(o) ? "&" : "?") + p.data, delete p.data), !1 === p.cache && (p.url = Ht.test(o) ? o.replace(Ht, "$1_=" + Ft++) : o + ($t.test(o) ? "&" : "?") + "_=" + Ft++)), p.ifModified && (fe.lastModified[o] && R.setRequestHeader("If-Modified-Since", fe.lastModified[o]), fe.etag[o] && R.setRequestHeader("If-None-Match", fe.etag[o])), (p.data && p.hasContent && !1 !== p.contentType || n.contentType) && R.setRequestHeader("Content-Type", p.contentType), R.setRequestHeader("Accept", p.dataTypes[0] && p.accepts[p.dataTypes[0]] ? p.accepts[p.dataTypes[0]] + ("*" !== p.dataTypes[0] ? ", " + Qt + "; q=0.01" : "") : p.accepts["*"]);
+            l = fe.event && p.global, l && 0 == fe.active++ && fe.event.trigger("ajaxStart"), p.type = p.type.toUpperCase(), p.hasContent = !Vt.test(p.type), o = p.url, p.hasContent || (p.data && (o = p.url += ($t.test(o) ? "&" : "?") + p.data, delete p.data), !1 === p.cache && (p.url = qt.test(o) ? o.replace(qt, "$1_=" + Ft++) : o + ($t.test(o) ? "&" : "?") + "_=" + Ft++)), p.ifModified && (fe.lastModified[o] && R.setRequestHeader("If-Modified-Since", fe.lastModified[o]), fe.etag[o] && R.setRequestHeader("If-None-Match", fe.etag[o])), (p.data && p.hasContent && !1 !== p.contentType || n.contentType) && R.setRequestHeader("Content-Type", p.contentType), R.setRequestHeader("Accept", p.dataTypes[0] && p.accepts[p.dataTypes[0]] ? p.accepts[p.dataTypes[0]] + ("*" !== p.dataTypes[0] ? ", " + Qt + "; q=0.01" : "") : p.accepts["*"]);
             for (i in p.headers) R.setRequestHeader(i, p.headers[i]);
             if (p.beforeSend && (!1 === p.beforeSend.call(f, R, p) || 2 === E)) return R.abort();
             w = "abort";
@@ -4492,9 +4573,10 @@ var App = {};
             var t, n = re.head || fe("head")[0] || re.documentElement;
             return {
                 send: function(r, a) {
-                    t = re.createElement("script"), t.async = !0, e.scriptCharset && (t.charset = e.scriptCharset), t.src = e.url, t.onload = t.onreadystatechange = function(e, n) {
-                        (n || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t.parentNode && t.parentNode.removeChild(t), t = null, n || a(200, "success"))
-                    }, n.insertBefore(t, n.firstChild)
+                    t = re.createElement("script"), t.async = !0,
+                        e.scriptCharset && (t.charset = e.scriptCharset), t.src = e.url, t.onload = t.onreadystatechange = function(e, n) {
+                            (n || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t.parentNode && t.parentNode.removeChild(t), t = null, n || a(200, "success"))
+                        }, n.insertBefore(t, n.firstChild)
                 },
                 abort: function() {
                     t && t.onload(undefined, !0)
@@ -5733,10 +5815,10 @@ function(e) {
     }
 
     function o() {
-        if (Hr)
-            for (var e in qr) {
-                var t = qr[e],
-                    n = Hr.indexOf(e);
+        if (qr)
+            for (var e in Hr) {
+                var t = Hr[e],
+                    n = qr.indexOf(e);
                 if (-1 < n || r("96", e), !Wr[n]) {
                     t.extractEvents || r("97", e), Wr[n] = t, n = t.eventTypes;
                     for (var a in n) {
@@ -5761,7 +5843,7 @@ function(e) {
     }
 
     function c(e) {
-        Hr && r("101"), Hr = Array.prototype.slice.call(e), o()
+        qr && r("101"), qr = Array.prototype.slice.call(e), o()
     }
 
     function l(e) {
@@ -5769,13 +5851,12 @@ function(e) {
         for (t in e)
             if (e.hasOwnProperty(t)) {
                 var a = e[t];
-                qr.hasOwnProperty(t) && qr[t] === a || (qr[t] && r("102", t), qr[t] = a, n = !0)
+                Hr.hasOwnProperty(t) && Hr[t] === a || (Hr[t] && r("102", t), Hr[t] = a, n = !0)
             } n && o()
     }
 
     function u(e, t, n, r) {
-        t = e.type || "unknown-event", e.currentTarget = Zr(r),
-            zr.invokeGuardedCallbackAndCatchFirstError(t, n, void 0, e), e.currentTarget = null
+        t = e.type || "unknown-event", e.currentTarget = Zr(r), zr.invokeGuardedCallbackAndCatchFirstError(t, n, void 0, e), e.currentTarget = null
     }
 
     function d(e, t) {
@@ -6026,7 +6107,7 @@ function(e) {
         }
     }
 
-    function H(e) {
+    function q(e) {
         if (e = Qr(e)) {
             ja && "function" == typeof ja.restoreControlledState || r("194");
             var t = Kr(e.stateNode);
@@ -6034,7 +6115,7 @@ function(e) {
         }
     }
 
-    function q(e) {
+    function H(e) {
         Da ? Aa ? Aa.push(e) : Aa = [e] : Da = e
     }
 
@@ -6046,8 +6127,8 @@ function(e) {
         if (Da) {
             var e = Da,
                 t = Aa;
-            if (Aa = Da = null, H(e), t)
-                for (e = 0; e < t.length; e++) H(t[e])
+            if (Aa = Da = null, q(e), t)
+                for (e = 0; e < t.length; e++) q(t[e])
         }
     }
 
@@ -6150,11 +6231,11 @@ function(e) {
                 return "ReactFragment";
             case Ga:
                 return "ReactPortal";
-            case qa:
+            case Ha:
                 return "Profiler(" + e.pendingProps.id + ")";
             case Wa:
                 return "Context.Provider";
-            case Ha:
+            case qa:
                 return "StrictMode";
             case Xa:
                 return "Timeout"
@@ -6292,7 +6373,7 @@ function(e) {
     }
 
     function we(e, t, n) {
-        return e = I.getPooled(ai.change, e, t, n), e.type = "change", q(n), T(e), e
+        return e = I.getPooled(ai.change, e, t, n), e.type = "change", H(n), T(e), e
     }
 
     function Re(e) {
@@ -6479,21 +6560,21 @@ function(e) {
 
     function Ge(e, t) {
         if (!t) return null;
-        var n = (Ti(e) ? He : qe).bind(null, e);
+        var n = (Ti(e) ? qe : He).bind(null, e);
         t.addEventListener(e, n, !1)
     }
 
     function ze(e, t) {
         if (!t) return null;
-        var n = (Ti(e) ? He : qe).bind(null, e);
+        var n = (Ti(e) ? qe : He).bind(null, e);
         t.addEventListener(e, n, !0)
     }
 
-    function He(e, t) {
-        Y(qe, e, t)
+    function qe(e, t) {
+        Y(He, e, t)
     }
 
-    function qe(e, t) {
+    function He(e, t) {
         if (Pi) {
             var n = Z(t);
             if (n = b(n), null === n || "number" != typeof n.tag || 2 === Me(n) || (n = null), Ni.length) {
@@ -7023,11 +7104,11 @@ function(e) {
             case Ja:
                 o = 11, t |= 3;
                 break;
-            case Ha:
+            case qa:
                 o = 11, t |= 2;
                 break;
-            case qa:
-                return a = new At(15, e, i, 4 | t), a.type = qa, a.expirationTime = n, a;
+            case Ha:
+                return a = new At(15, e, i, 4 | t), a.type = Ha, a.expirationTime = n, a;
             case Xa:
                 o = 16, t |= 2;
                 break;
@@ -7112,11 +7193,11 @@ function(e) {
         return !0
     }
 
-    function Ht(e) {
+    function qt(e) {
         "function" == typeof No && No(e)
     }
 
-    function qt(e) {
+    function Ht(e) {
         "function" == typeof Po && Po(e)
     }
 
@@ -7306,8 +7387,7 @@ function(e) {
                     null === e ? delete t[i] : t[i] = e
                 }, t._stringRef = i, t)
             }
-            "string" != typeof e && r("148"),
-                n._owner || r("254", e)
+            "string" != typeof e && r("148"), n._owner || r("254", e)
         }
         return e
     }
@@ -7523,34 +7603,34 @@ function(e) {
 
     function En(e) {
         if (Wo) {
-            var t = qo;
+            var t = Ho;
             if (t) {
                 var n = t;
                 if (!bn(e, t)) {
-                    if (!(t = wt(n)) || !bn(e, t)) return e.effectTag |= 2, Wo = !1, void(Ho = e);
-                    gn(Ho, n)
+                    if (!(t = wt(n)) || !bn(e, t)) return e.effectTag |= 2, Wo = !1, void(qo = e);
+                    gn(qo, n)
                 }
-                Ho = e, qo = Rt(t)
-            } else e.effectTag |= 2, Wo = !1, Ho = e
+                qo = e, Ho = Rt(t)
+            } else e.effectTag |= 2, Wo = !1, qo = e
         }
     }
 
     function wn(e) {
         for (e = e["return"]; null !== e && 5 !== e.tag && 3 !== e.tag;) e = e["return"];
-        Ho = e
+        qo = e
     }
 
     function Rn(e) {
-        if (e !== Ho) return !1;
+        if (e !== qo) return !1;
         if (!Wo) return wn(e), Wo = !0, !1;
         var t = e.type;
         if (5 !== e.tag || "head" !== t && "body" !== t && !Et(t, e.memoizedProps))
-            for (t = qo; t;) gn(e, t), t = wt(t);
-        return wn(e), qo = Ho ? wt(e.stateNode) : null, !0
+            for (t = Ho; t;) gn(e, t), t = wt(t);
+        return wn(e), Ho = qo ? wt(e.stateNode) : null, !0
     }
 
     function _n() {
-        qo = Ho = null, Wo = !1
+        Ho = qo = null, Wo = !1
     }
 
     function kn(e, t, n) {
@@ -7704,7 +7784,7 @@ function(e) {
                 else c = t.type, a = t.stateNode, o = t.memoizedProps, l = t.pendingProps, a.props = o, u = a.context, s = xt(t), s = Ot(t, s), d = c.getDerivedStateFromProps, (c = "function" == typeof d || "function" == typeof a.getSnapshotBeforeUpdate) || "function" != typeof a.UNSAFE_componentWillReceiveProps && "function" != typeof a.componentWillReceiveProps || (o !== l || u !== s) && fn(t, a, l, s), jo = !1, u = t.memoizedState, p = a.state = u, f = t.updateQueue, null !== f && (en(t, f, l, a, n), p = t.memoizedState), o !== l || u !== p || So.current || jo ? ("function" == typeof d && (dn(t, d, l), p = t.memoizedState), (d = jo || pn(t, o, l, u, p, s)) ? (c || "function" != typeof a.UNSAFE_componentWillUpdate && "function" != typeof a.componentWillUpdate || ("function" == typeof a.componentWillUpdate && a.componentWillUpdate(l, p, s), "function" == typeof a.UNSAFE_componentWillUpdate && a.UNSAFE_componentWillUpdate(l, p, s)), "function" == typeof a.componentDidUpdate && (t.effectTag |= 4), "function" == typeof a.getSnapshotBeforeUpdate && (t.effectTag |= 256)) : ("function" != typeof a.componentDidUpdate || o === e.memoizedProps && u === e.memoizedState || (t.effectTag |= 4), "function" != typeof a.getSnapshotBeforeUpdate || o === e.memoizedProps && u === e.memoizedState || (t.effectTag |= 256), t.memoizedProps = l, t.memoizedState = p), a.props = l, a.state = p, a.context = s, a = d) : ("function" != typeof a.componentDidUpdate || o === e.memoizedProps && u === e.memoizedState || (t.effectTag |= 4), "function" != typeof a.getSnapshotBeforeUpdate || o === e.memoizedProps && u === e.memoizedState || (t.effectTag |= 256), a = !1);
                 return On(e, t, a, i, n);
             case 3:
-                return Sn(t), i = t.updateQueue, null !== i ? (a = t.memoizedState, a = null !== a ? a.element : null, en(t, i, t.pendingProps, null, n), i = t.memoizedState.element, i === a ? (_n(), e = Pn(e, t)) : (a = t.stateNode, (a = (null === e || null === e.child) && a.hydrate) && (qo = Rt(t.stateNode.containerInfo), Ho = t, a = Wo = !0), a ? (t.effectTag |= 2, t.child = zo(t, null, i, n)) : (_n(), kn(e, t, i)), e = t.child)) : (_n(), e = Pn(e, t)), e;
+                return Sn(t), i = t.updateQueue, null !== i ? (a = t.memoizedState, a = null !== a ? a.element : null, en(t, i, t.pendingProps, null, n), i = t.memoizedState.element, i === a ? (_n(), e = Pn(e, t)) : (a = t.stateNode, (a = (null === e || null === e.child) && a.hydrate) && (Ho = Rt(t.stateNode.containerInfo), qo = t, a = Wo = !0), a ? (t.effectTag |= 2, t.child = zo(t, null, i, n)) : (_n(), kn(e, t, i)), e = t.child)) : (_n(), e = Pn(e, t)), e;
             case 5:
                 return sn(Uo.current), i = sn(Bo.current), a = ot(i, t.type), i !== a && (Ct(Lo, t, t), Ct(Bo, a, t)), null === e && En(t), i = t.type, l = t.memoizedProps, a = t.pendingProps, o = null !== e ? e.memoizedProps : null, So.current || l !== a || ((l = 1 & t.mode && !!a.hidden) && (t.expirationTime = 1073741823), l && 1073741823 === n) ? (l = a.children, Et(i, a) ? l = null : o && Et(i, o) && (t.effectTag |= 16), xn(e, t), 1073741823 !== n && 1 & t.mode && a.hidden ? (t.expirationTime = 1073741823, t.memoizedProps = a, e = null) : (kn(e, t, l), t.memoizedProps = a, e = t.child)) : e = Pn(e, t), e;
             case 6:
@@ -7831,7 +7911,7 @@ function(e) {
     }
 
     function Bn(e) {
-        switch ("function" == typeof qt && qt(e), e.tag) {
+        switch ("function" == typeof Ht && Ht(e), e.tag) {
             case 2:
                 In(e);
                 var t = e.stateNode;
@@ -8010,7 +8090,7 @@ function(e) {
         }), n
     }
 
-    function Hn(e, t, n, r, a, i) {
+    function qn(e, t, n, r, a, i) {
         n.effectTag |= 512, n.firstEffect = n.lastEffect = null, r = rn(r, n), e = t;
         do {
             switch (e.tag) {
@@ -8023,7 +8103,7 @@ function(e) {
         } while (null !== e)
     }
 
-    function qn(e) {
+    function Hn(e) {
         switch (e.tag) {
             case 2:
                 Tt(e);
@@ -8096,7 +8176,7 @@ function(e) {
                 }
                 e = n
             } else {
-                if (null !== (e = qn(e, os, as))) return e.effectTag &= 511, e;
+                if (null !== (e = Hn(e, os, as))) return e.effectTag &= 511, e;
                 if (null !== n && (n.firstEffect = n.lastEffect = null, n.effectTag |= 512), null !== r) return r;
                 if (null === n) break;
                 e = n
@@ -8128,7 +8208,7 @@ function(e) {
                         a = !0, mr(t);
                         break
                     }
-                    Hn(e, i, n, t, os, as, Qo), ns = Vn(n)
+                    qn(e, i, n, t, os, as, Qo), ns = Vn(n)
                 }
             }
             break
@@ -8503,7 +8583,7 @@ function(e) {
             }
             i && (null === ss && r("178"), Xn(ss, k), null !== ss && (ss = ss.nextEffect))
         }
-        ts = cs = !1, "function" == typeof Ht && Ht(t.stateNode), t = n.current.expirationTime, 0 === t && (us = null), e.remainingExpirationTime = t
+        ts = cs = !1, "function" == typeof qt && qt(t.stateNode), t = n.current.expirationTime, 0 === t && (us = null), e.remainingExpirationTime = t
     }
 
     function fr() {
@@ -8728,8 +8808,8 @@ function(e) {
                 r("198")
             }
         },
-        Hr = null,
-        qr = {},
+        qr = null,
+        Hr = {},
         Wr = [],
         Vr = {},
         Jr = {},
@@ -8926,7 +9006,7 @@ function(e) {
         Aa = null,
         Ia = {
             injection: Ma,
-            enqueueStateRestore: q,
+            enqueueStateRestore: H,
             needsStateRestore: W,
             restoreStateIfNeeded: V
         },
@@ -8953,8 +9033,8 @@ function(e) {
         $a = Fa ? Symbol["for"]("react.element") : 60103,
         Ga = Fa ? Symbol["for"]("react.portal") : 60106,
         za = Fa ? Symbol["for"]("react.fragment") : 60107,
-        Ha = Fa ? Symbol["for"]("react.strict_mode") : 60108,
-        qa = Fa ? Symbol["for"]("react.profiler") : 60114,
+        qa = Fa ? Symbol["for"]("react.strict_mode") : 60108,
+        Ha = Fa ? Symbol["for"]("react.profiler") : 60114,
         Wa = Fa ? Symbol["for"]("react.provider") : 60109,
         Va = Fa ? Symbol["for"]("react.context") : 60110,
         Ja = Fa ? Symbol["for"]("react.async_mode") : 60111,
@@ -9392,7 +9472,7 @@ function(e) {
             },
             trapBubbledEvent: Ge,
             trapCapturedEvent: ze,
-            dispatchEvent: qe
+            dispatchEvent: He
         },
         Mi = {},
         Di = 0,
@@ -9461,8 +9541,8 @@ function(e) {
         BeforeInputEventPlugin: Pa
     });
     var zi = "function" == typeof requestAnimationFrame ? requestAnimationFrame : void 0,
-        Hi = Date,
-        qi = setTimeout,
+        qi = Date,
+        Hi = setTimeout,
         Wi = clearTimeout,
         Vi = void 0;
     if ("object" == typeof performance && "function" == typeof performance.now) {
@@ -9471,7 +9551,7 @@ function(e) {
             return Ji.now()
         }
     } else Vi = function() {
-        return Hi.now()
+        return qi.now()
     };
     var Yi = void 0,
         Xi = void 0;
@@ -9551,7 +9631,7 @@ function(e) {
                     next: null,
                     prev: null
                 },
-                n = qi(function() {
+                n = Hi(function() {
                     e({
                         timeRemaining: function() {
                             return 1 / 0
@@ -9738,8 +9818,8 @@ function(e) {
         $o = Array.isArray,
         Go = vn(!0),
         zo = vn(!1),
-        Ho = null,
         qo = null,
+        Ho = null,
         Wo = !1,
         Vo = void 0,
         Jo = void 0,
@@ -10085,12 +10165,13 @@ function(e, t) {
                 }
             };
         l.handleMount = function(e) {
-            var t = undefined;
-            e && e.target && (t = e.target), l.mountComponents(t)
-        }, l.handleUnmount = function(e) {
-            var t = undefined;
-            e && e.target && (t = e.target), l.unmountComponents(t)
-        }, "undefined" != typeof window && l.detectEvents(), self.ReactRailsUJS = l, e.exports = l
+                var t = undefined;
+                e && e.target && (t = e.target), l.mountComponents(t)
+            }, l.handleUnmount = function(e) {
+                var t = undefined;
+                e && e.target && (t = e.target), l.unmountComponents(t)
+            }, "undefined" != typeof window && l.detectEvents(),
+            self.ReactRailsUJS = l, e.exports = l
     }, function(e) {
         e.exports = {
             setup: function(e) {
@@ -11281,7 +11362,8 @@ var Ban = function(e) {
             var a = e,
                 i = t,
                 o = n;
-            r = !1, null === a && (a = Function.prototype);
+            r = !1,
+                null === a && (a = Function.prototype);
             var s = Object.getOwnPropertyDescriptor(a, i);
             if (s !== undefined) {
                 if ("value" in s) return s.value;
@@ -11354,8 +11436,7 @@ $(document).on("mousedown", "[data-dropdown=react-dropdown]", function() {
         if (n[r] != undefined && "react-dropdown" == n[r].dropdown) {
             a = !0;
             break
-        }
-    0 == a && $(".react-dropdown-show").removeClass("react-dropdown-show")
+        } 0 == a && $(".react-dropdown-show").removeClass("react-dropdown-show")
 });
 var _createClass = function() {
         function e(e, t) {
@@ -11536,7 +11617,7 @@ var GoldAd = function(e) {
                         fontSize: "16px",
                         margin: "0 0 0 0"
                     },
-                    "class": "material-icons"
+                    className: "material-icons"
                 }, "lock")), React.createElement("label", {
                     style: {
                         marginBottom: "13px"
@@ -13790,7 +13871,9 @@ var Microposts = function(e) {
     ModPanel = function(e) {
         function t(e) {
             _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
-                tab: "loading"
+                tab: "loading",
+                banned: !1,
+                ttl: 0
             }
         }
         return _inherits(t, e), _createClass(t, [{
@@ -13805,7 +13888,7 @@ var Microposts = function(e) {
                             tab: "default"
                         }) : this.close()
                     }.bind(this)
-                })
+                }), this.ban_status()
             }
         }, {
             key: "close",
@@ -13827,6 +13910,21 @@ var Microposts = function(e) {
                 })
             }
         }, {
+            key: "ban_status",
+            value: function() {
+                $.ajax({
+                    type: "GET",
+                    url: "/ban_status?id=" + this.props.id,
+                    dataType: "json",
+                    success: function(e) {
+                        this.setState({
+                            banned: e.banned,
+                            ttl: e.ttl
+                        })
+                    }.bind(this)
+                })
+            }
+        }, {
             key: "ban",
             value: function() {
                 var e = $.param({
@@ -13835,13 +13933,14 @@ var Microposts = function(e) {
                     reason: document.getElementById("reason").value
                 });
                 $.ajax({
-                    type: "GET",
-                    url: "/ban_user?" + e,
-                    dataType: "json",
-                    success: function() {}.bind(this)
-                }), this.setState({
-                    tab: "success"
-                })
+                        type: "GET",
+                        url: "/ban_user?" + e,
+                        dataType: "json",
+                        success: function() {}.bind(this)
+                    }),
+                    this.setState({
+                        tab: "success"
+                    })
             }
         }, {
             key: "unban",
@@ -14005,12 +14104,21 @@ var Microposts = function(e) {
                 }, "chat_bubble"), "remove all posts"), this.master_controls())
             }
         }, {
+            key: "status",
+            value: function() {
+                if (this.state.ttl > 0) {
+                    var e = new Date;
+                    e.setSeconds(e.getSeconds() + this.state.ttl), body = React.createElement("div", null, "Banned till ", e.toLocaleString(), ".")
+                } else body = React.createElement("div", null, "Banned");
+                return body
+            }
+        }, {
             key: "render",
             value: function() {
                 if ("default" == this.state.tab) var e = React.createElement("div", {
                     key: "notification_menu",
                     className: "notification-menu-container"
-                }, "MOD CONTROL PANEL", React.createElement("br", null), React.createElement("br", null), this.body(), React.createElement("div", {
+                }, "MOD CONTROL PANEL", React.createElement("br", null), React.createElement("br", null), this.state.banned && this.status(), React.createElement("br", null), this.body(), React.createElement("div", {
                     className: "ui-menu-buttons"
                 }, React.createElement("div", {
                     onMouseDown: this.close.bind(this),
@@ -14122,6 +14230,16 @@ var Microposts = function(e) {
                 element = React.createElement(Menu, null, React.createElement(SearchMenu, null)), ReactDOM.render(element, document.getElementById("ui-hatch"))
             }
         }, {
+            key: "videoModeration",
+            value: function() {
+                ReactDOM.render(React.createElement(VideoModeration, null), document.getElementById("container"))
+            }
+        }, {
+            key: "pictureModeration",
+            value: function() {
+                ReactDOM.render(React.createElement(PictureModeration, null), document.getElementById("container"))
+            }
+        }, {
             key: "render",
             value: function() {
                 return React.createElement("div", {
@@ -14150,7 +14268,17 @@ var Microposts = function(e) {
                     className: "  actionicon-mega"
                 }, React.createElement("span", {
                     className: "material-icons actionicon-icon"
-                }, "search"), "Search"))
+                }, "search"), "Search"), this.props.data.user.mod && React.createElement("div", null, React.createElement("div", {
+                    onMouseDown: this.videoModeration.bind(this),
+                    className: "actionicon-mega"
+                }, React.createElement("span", {
+                    className: "material-icons actionicon-icon"
+                }, "public"), "Video Mod"), React.createElement("div", {
+                    onMouseDown: this.pictureModeration.bind(this),
+                    className: "actionicon-mega"
+                }, React.createElement("span", {
+                    className: "material-icons actionicon-icon"
+                }, "public"), "Picture Mod")))
             }
         }]), t
     }(React.Component),
@@ -15020,14 +15148,13 @@ var MessageNotifications = function(e) {
 NotificationsReact = new Object;
 var Notifications = function(e) {
         function t(e) {
-            _classCallCheck(this, t),
-                _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
-                    data: {
-                        read: [],
-                        unread: [],
-                        friend_requests: []
-                    }
-                }, NotificationsReact = this
+            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
+                data: {
+                    read: [],
+                    unread: [],
+                    friend_requests: []
+                }
+            }, NotificationsReact = this
         }
         return _inherits(t, e), _createClass(t, [{
             key: "componentDidMount",
@@ -15322,6 +15449,329 @@ var Notifications = function(e) {
         }]), t
     }(React.Component),
     _createClass = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var r = t[n];
+                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+            }
+        }
+        return function(t, n, r) {
+            return n && e(t.prototype, n), r && e(t, r), t
+        }
+    }(),
+    _get = function(e, t, n) {
+        for (var r = !0; r;) {
+            var a = e,
+                i = t,
+                o = n;
+            r = !1, null === a && (a = Function.prototype);
+            var s = Object.getOwnPropertyDescriptor(a, i);
+            if (s !== undefined) {
+                if ("value" in s) return s.value;
+                var c = s.get;
+                return c === undefined ? undefined : c.call(o)
+            }
+            var l = Object.getPrototypeOf(a);
+            if (null === l) return undefined;
+            e = l, t = i, n = o, r = !0, s = l = undefined
+        }
+    },
+    PictureModeration = function(e) {
+        function t(e) {
+            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
+                picture_moderations: []
+            }, this["delete"] = this["delete"].bind(this), this.approve = this.approve.bind(this)
+        }
+        return _inherits(t, e), _createClass(t, [{
+            key: "componentDidMount",
+            value: function() {
+                this.fetch_data()
+            }
+        }, {
+            key: "fetch_data",
+            value: function() {
+                $.ajax({
+                    type: "GET",
+                    url: "/picture_moderations",
+                    dataType: "json",
+                    success: function(e) {
+                        state = {
+                            picture_moderations: e
+                        }, this.setState(state)
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "delete",
+            value: function(e) {
+                $.ajax({
+                    type: "DELETE",
+                    url: "/picture_moderations/" + e,
+                    dataType: "json",
+                    success: function() {
+                        state = {
+                            picture_moderations: this.state.picture_moderations.filter(function(t) {
+                                return t.id != e
+                            })
+                        }, this.setState(state)
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "approve",
+            value: function(e) {
+                $.ajax({
+                    type: "POST",
+                    url: "/picture_moderations/" + e + "/approve",
+                    dataType: "json",
+                    success: function() {
+                        state = {
+                            picture_moderations: this.state.picture_moderations.filter(function(t) {
+                                return t.id != e
+                            })
+                        }, this.setState(state)
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "render",
+            value: function() {
+                var e = this;
+                return React.createElement("div", {
+                    className: "dashboard-background"
+                }, React.createElement("div", {
+                    className: "dashboard-container"
+                }, React.createElement("div", {
+                    className: "meet-cards-container video-moderation"
+                }, this.state.picture_moderations.map(function(t) {
+                    return React.createElement(PictureModerationUnit, {
+                        key: "picture_moderation" + t.id,
+                        data: t,
+                        "delete": e["delete"],
+                        approve: e.approve
+                    })
+                }))))
+            }
+        }]), t
+    }(React.Component),
+    _createClass = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var r = t[n];
+                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+            }
+        }
+        return function(t, n, r) {
+            return n && e(t.prototype, n), r && e(t, r), t
+        }
+    }(),
+    _get = function(e, t, n) {
+        for (var r = !0; r;) {
+            var a = e,
+                i = t,
+                o = n;
+            r = !1, null === a && (a = Function.prototype);
+            var s = Object.getOwnPropertyDescriptor(a, i);
+            if (s !== undefined) {
+                if ("value" in s) return s.value;
+                var c = s.get;
+                return c === undefined ? undefined : c.call(o)
+            }
+            var l = Object.getPrototypeOf(a);
+            if (null === l) return undefined;
+            e = l, t = i, n = o, r = !0, s = l = undefined
+        }
+    },
+    PictureModerationUnit = function(e) {
+        function t(e) {
+            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this["delete"] = this["delete"].bind(this), this.approve = this.approve.bind(this)
+        }
+        return _inherits(t, e), _createClass(t, [{
+            key: "delete",
+            value: function() {
+                this.props["delete"](this.props.data.id)
+            }
+        }, {
+            key: "approve",
+            value: function() {
+                this.props.approve(this.props.data.id)
+            }
+        }, {
+            key: "render",
+            value: function() {
+                return data = this.props.data, React.createElement("div", {
+                    className: "dashboard-button animated",
+                    style: {
+                        paddingTop: "30px"
+                    }
+                }, React.createElement("img", {
+                    src: data.image_url,
+                    width: "160",
+                    height: "160"
+                }), React.createElement("h2", null, data.display_name + "(" + data.username + ")"), React.createElement("button", {
+                    className: "ui-button-match-mega gold-button",
+                    onClick: this.approve
+                }, "Approve"), React.createElement("button", {
+                    className: "ui-button-match-mega red-button",
+                    onClick: this["delete"]
+                }, "Reject"))
+            }
+        }]), t
+    }(React.Component),
+    _createClass = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var r = t[n];
+                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+            }
+        }
+        return function(t, n, r) {
+            return n && e(t.prototype, n), r && e(t, r), t
+        }
+    }(),
+    _get = function(e, t, n) {
+        for (var r = !0; r;) {
+            var a = e,
+                i = t,
+                o = n;
+            r = !1, null === a && (a = Function.prototype);
+            var s = Object.getOwnPropertyDescriptor(a, i);
+            if (s !== undefined) {
+                if ("value" in s) return s.value;
+                var c = s.get;
+                return c === undefined ? undefined : c.call(o)
+            }
+            var l = Object.getPrototypeOf(a);
+            if (null === l) return undefined;
+            e = l, t = i, n = o, r = !0, s = l = undefined
+        }
+    },
+    MessagePictureUpload = function(e) {
+        function t(e) {
+            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
+                tab: "default"
+            }, PictureUploadMenu = this
+        }
+        return _inherits(t, e), _createClass(t, [{
+            key: "upload",
+            value: function() {
+                this.setState({
+                    tab: "uploading"
+                }), $("#picture_upload").submit()
+            }
+        }, {
+            key: "send_picture",
+            value: function(e) {
+                this.props.append({
+                    messages: [],
+                    user: App.user,
+                    picture: e
+                }), App.room.client.speak({
+                    picture: e
+                }), this.scroll()
+            }
+        }, {
+            key: "file_ready",
+            value: function(e) {
+                var t = e.target.result;
+                this.send_picture(t)
+            }
+        }, {
+            key: "handleSubmit",
+            value: function(e) {
+                if (e.preventDefault(), file = document.getElementById("image"), file.value.length) {
+                    var t = new FileReader;
+                    t.onload = function(e) {
+                        var t = e.target.result;
+                        App.room.client.speak({
+                            picture: t
+                        }), RoomClient.append({
+                            messages: [],
+                            picture: t,
+                            user: App.user,
+                            isMine: !0
+                        })
+                    }, t.readAsDataURL(file.files[0]), MenuReactMicro.close()
+                }
+            }
+        }, {
+            key: "close",
+            value: function() {
+                MenuReactMicro.close()
+            }
+        }, {
+            key: "body",
+            value: function() {
+                return React.createElement("div", {
+                    className: "file-input-field"
+                }, React.createElement("input", {
+                    className: "picture-upload-button",
+                    type: "file",
+                    id: "image",
+                    name: "image",
+                    accept: "image/*"
+                }), React.createElement("label", {
+                    htmlFor: "image"
+                }, React.createElement("span", {
+                    style: {
+                        verticalAlign: "text-top",
+                        marginRight: "5px"
+                    },
+                    className: "material-icons"
+                }, "cloud_upload"), " Choose a file"))
+            }
+        }, {
+            key: "render",
+            value: function() {
+                return "default" == this.state.tab ? (message = React.createElement("div", {
+                    className: "ui-menu-text"
+                }, React.createElement("b", null, "Tip:"), " Emerald uses AI and deep learning image recognition software to detect nudity and other images that break the rules. To avoid automated bans please refrain from uploading inappropriate content."), tab = React.createElement("div", {
+                    key: "notification_menu",
+                    className: "notification-menu-container"
+                }, React.createElement("form", {
+                    onSubmit: this.handleSubmit
+                }, "UPLOAD IMAGE", React.createElement(BR, null), React.createElement(BR, null), this.body(), message, React.createElement("div", {
+                    className: "ui-menu-buttons"
+                }, React.createElement("div", {
+                    onMouseDown: this.close,
+                    className: "ui-button-text"
+                }, "Close"), React.createElement("input", {
+                    className: "ui-button",
+                    type: "submit",
+                    value: "Upload"
+                }))))) : "uploading" == this.state.tab ? (message = React.createElement("div", {
+                    className: "ui-menu-text"
+                }, "We're uploading your picture, this will only take a few seconds..."), tab = React.createElement("div", {
+                    key: "notification_menu",
+                    className: "notification-menu-container"
+                }, "UPLOADING", React.createElement(BR, null), React.createElement(BR, null), this.body(), message, React.createElement("div", {
+                    style: {
+                        height: "142px"
+                    },
+                    className: "line-scale-pulse-out-rapid2"
+                }, React.createElement("div", null), React.createElement("div", null), React.createElement("div", null), React.createElement("div", null), React.createElement("div", null)))) : "uploaded" == this.state.tab && (message = React.createElement("div", {
+                    className: "ui-menu-text"
+                }, "Your picture has been uploaded!"), tab = React.createElement("div", {
+                    key: "notification_menu",
+                    className: "notification-menu-container"
+                }, "UPLOADED!", React.createElement(BR, null), React.createElement(BR, null), message, React.createElement("div", {
+                    className: "ui-menu-buttons"
+                }, React.createElement("div", {
+                    onMouseDown: this.close,
+                    className: "ui-button-text"
+                }, "Close")))), tab
+            }
+        }]), t
+    }(React.Component);
+MessagePictureUploader = {
+    success: function(e) {
+        PictureUploadMenu.setState({
+            tab: "uploaded"
+        }), this.onUploaded(e)
+    },
+    onUploaded: function() {}
+};
+var _createClass = function() {
         function e(e, t) {
             for (var n = 0; n < t.length; n++) {
                 var r = t[n];
@@ -15941,7 +16391,10 @@ var get_boolean = function(e) {
                             flair: e.room_data.partner.flair
                         }
                     }),
-                    i = React.createElement("div", null, "You've been matched to ", a, " say hi!", t);
+                    i = React.createElement("div", {
+                        id: "matched-message",
+                        "data-matched-id": e.room_data.partner.id
+                    }, "You've been matched to ", a, " say hi!", t);
                 RoomClient.print(i);
                 var o = RoomMatchHistoryClient.state.history;
                 o.unshift(e.room_data.partner), RoomMatchHistoryClient.setState({
@@ -16273,6 +16726,11 @@ var get_boolean = function(e) {
             key: "componentDidMount",
             value: function() {}
         }, {
+            key: "showImage",
+            value: function(e) {
+                e.target.nextElementSibling.classList.remove("hidden"), e.target.classList.add("hidden")
+            }
+        }, {
             key: "process",
             value: function(e) {
                 for (var t = ["youtube.com", "youtu.be"], n = 0; n < t.length; n++)
@@ -16302,9 +16760,20 @@ var get_boolean = function(e) {
             key: "content",
             value: function() {
                 var e = this;
-                return this.props.data.picture ? React.createElement(MessagePicture, {
-                    picture: this.props.data.picture
-                }) : (messages = this.props.data.messages.map(function(t) {
+                return this.props.data.picture ? this.props.data.isMine ? React.createElement("div", {
+                    className: "image-wrap"
+                }, React.createElement("img", {
+                    src: this.props.data.picture,
+                    className: "message-image"
+                })) : React.createElement("div", {
+                    className: "image-wrap"
+                }, React.createElement("a", {
+                    className: "image-warning",
+                    onClick: this.showImage.bind(this)
+                }, "click here to show image"), React.createElement("img", {
+                    src: this.props.data.picture,
+                    className: "message-image hidden"
+                })) : (messages = this.props.data.messages.map(function(t) {
                     return React.createElement("div", {
                         key: JSON.stringify(t)
                     }, e.process(t))
@@ -16761,7 +17230,7 @@ var Room = function(e) {
             } else t.push(e);
             this.setState({
                 messages: t
-            })
+            }), console.log(t)
         }
     }, {
         key: "prepend",
@@ -16791,8 +17260,8 @@ var Room = function(e) {
     }, {
         key: "upload_picture",
         value: function() {
-            if ((App.user.temp || App.user.karma < 10) && "channel" == this.state.mode) return void alert("Sorry! But you can't use this feature. You need at least 10 karma points and to be a registered user before you can upload images into the chatroom.");
-            element = React.createElement(MenuMicro, null, React.createElement(PictureUpload, null)), ReactDOM.render(element, document.getElementById("ui-hatch-2")), PictureUploader.onUploaded = function(e) {
+            if (!App.user.gold) return void alert("Sorry! But you can't use this feature. You need to be a gold user before you can upload images into the chatroom.");
+            element = React.createElement(MenuMicro, null, React.createElement(MessagePictureUpload, null)), ReactDOM.render(element, document.getElementById("ui-hatch-2")), MessagePictureUploader.onUploaded = function(e) {
                 this.send_picture(e), MenuReactMicro.close()
             }.bind(this)
         }
@@ -16850,7 +17319,13 @@ var Room = function(e) {
                 onKeyDown: this.input.bind(this),
                 id: "room-input",
                 placeholder: "Say Something..."
-            })), body
+            }), React.createElement("a", {
+                href: "#",
+                onMouseDown: this.upload_picture
+            }, React.createElement("img", {
+                src: "assets/picture-icon.svg",
+                className: "room-component-picture-icon"
+            }))), body
         }
     }, {
         key: "room_input_video",
@@ -16863,7 +17338,13 @@ var Room = function(e) {
                 onKeyDown: this.input.bind(this),
                 id: "room-input",
                 placeholder: ""
-            })), body
+            }), React.createElement("a", {
+                href: "#",
+                onMouseDown: this.upload_picture
+            }, React.createElement("img", {
+                src: "assets/picture-icon.svg",
+                className: "room-component-picture-icon"
+            }))), body
         }
     }, {
         key: "room_typing",
@@ -17665,7 +18146,7 @@ var RoomMatchHistory = function(e) {
                     id: "match-video"
                 }, React.createElement("div", {
                     className: "room-component-video room-component-video-partner",
-                    id: "remotesVideos"
+                    id: "remoteVideos"
                 }), React.createElement("div", {
                     className: "room-component-video room-component-video-local"
                 }, React.createElement("video", {
@@ -20195,7 +20676,8 @@ var UserProfile = function(e) {
             _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
                 data: null,
                 tab: "feed",
-                compact_bio: !0
+                compact_bio: !0,
+                pic_upload_requested: !1
             }, UserProfileReact = this
         }
         return _inherits(t, e), _createClass(t, [{
@@ -20353,7 +20835,9 @@ var UserProfile = function(e) {
             key: "update_profile_picture",
             value: function() {
                 element = React.createElement(MenuMicro, null, React.createElement(PictureUpload, null)), ReactDOM.render(element, document.getElementById("ui-hatch-2")), PictureUploader.onUploaded = function(e) {
-                    i = e.id, $.ajax({
+                    this.setState({
+                        pic_upload_requested: !0
+                    }), i = e.id, $.ajax({
                         type: "GET",
                         url: "/set_display_picture?id=" + i,
                         dataType: "json",
@@ -20366,7 +20850,7 @@ var UserProfile = function(e) {
         }, {
             key: "profile_picture",
             value: function() {
-                return this.state.data.user.id == this.state.data.current_user.id ? React.createElement("span", null, React.createElement("img", {
+                return this.state.data.user.id == this.state.data.current_user.id && this.state.data.user.gold ? React.createElement("span", null, React.createElement("img", {
                     onMouseDown: this.update_profile_picture.bind(this),
                     className: "user-profile-avatar",
                     src: this.state.data.user.display_picture
@@ -20463,6 +20947,26 @@ var UserProfile = function(e) {
                     onMouseDown: this.switch_tab.bind(this, tab = "feed"),
                     className: "user-profile-tab user-profile-tab-active"
                 }, "Pictures")), React.createElement("div", null, feed, info, pictures)
+            }
+        }, {
+            key: "pic_upload_notification",
+            value: function() {
+                if (this.state.pic_upload_requested) return React.createElement("div", {
+                    className: "emerald-jumbotron-message",
+                    style: {
+                        marginBottom: "10px"
+                    }
+                }, React.createElement("span", null, "Your profile picture is being checked by the Emerald team. This can take some time."), React.createElement("span", {
+                    onClick: this.close_pic_upload_notification.bind(this),
+                    className: "material-icons"
+                }, "close"))
+            }
+        }, {
+            key: "close_pic_upload_notification",
+            value: function() {
+                this.setState({
+                    pic_upload_requested: !1
+                })
             }
         }, {
             key: "top",
@@ -20571,7 +21075,7 @@ var UserProfile = function(e) {
                     className: "animated fadeIn ui-bg"
                 }), React.createElement("div", {
                     className: "animated zoomIn user-profile-menu"
-                }, this.top(), this.bottom())) : React.createElement("div", {
+                }, this.top(), this.pic_upload_notification(), this.bottom())) : React.createElement("div", {
                     className: "ui-menu-container"
                 }, React.createElement("div", {
                     onMouseDown: this.close.bind(this),
@@ -20832,12 +21336,12 @@ var UserProfile = function(e) {
         }, {
             key: "exit_click",
             value: function(e) {
-                (e.clientX > this.state.x + 240 || e.clientX < this.state.x || e.clientY > this.state.y + 250 || e.clientY < this.state.y) && this.close()
+                (e.clientX > this.state.x + 240 || e.clientX < this.state.x || e.clientY > this.state.y + 300 || e.clientY < this.state.y) && this.close()
             }
         }, {
             key: "close",
             value: function() {
-                document.removeEventListener("mousedown", this.exit_click, !1), ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode)
+                document.removeEventListener("mousedown", this.exit_click, !0), ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode)
             }
         }, {
             key: "mod_panel",
@@ -21018,16 +21522,64 @@ var UserProfile = function(e) {
                 }, karma.rank)))
             }
         }, {
+            key: "report_user",
+            value: function() {
+                var e = $('meta[name="csrf-token"]').attr("content");
+                $.ajax({
+                    type: "POST",
+                    url: "report?user_id=" + this.state.user.id,
+                    dataType: "json",
+                    beforeSend: function(t) {
+                        t.setRequestHeader("X-CSRF-Token", e)
+                    },
+                    success: function(e) {
+                        1 == e.reported && (this.close(), component = React.createElement(MenuMicro, null, "MESSAGE", React.createElement(BR, null), React.createElement(BR, null), React.createElement("div", {
+                            className: "m1"
+                        }, "Reported "), React.createElement("div", {
+                            className: "ui-menu-buttons"
+                        }, React.createElement("div", {
+                            onMouseDown: function() {
+                                MenuReactMicro.close()
+                            },
+                            className: "ui-button-text"
+                        }, "Close"))), ReactDOM.render(component, document.getElementById("ui-hatch-2")))
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "is_user_reported",
+            value: function(e) {
+                var t = this,
+                    n = $('meta[name="csrf-token"]').attr("content");
+                $.ajax({
+                    type: "GET",
+                    url: "is_user_reported?user_id=" + e,
+                    dataType: "json",
+                    beforeSend: function(e) {
+                        e.setRequestHeader("X-CSRF-Token", n)
+                    },
+                    success: function(e) {
+                        t.setState({
+                            reported: e.reported
+                        })
+                    }
+                })
+            }
+        }, {
             key: "bottom",
             value: function() {
-                var e = null;
+                var e = null,
+                    t = null;
                 return e = -1 != App.room.muted.indexOf(this.state.user.id) ? React.createElement("div", {
                     onMouseDown: this.unmute.bind(this),
                     className: "user-profile-micro-button"
                 }, "Unmute") : React.createElement("div", {
                     onMouseDown: this.mute.bind(this),
                     className: "user-profile-micro-button"
-                }, "Mute"), React.createElement("div", {
+                }, "Mute"), t = React.createElement("div", {
+                    onMouseDown: this.report_user.bind(this),
+                    className: "user-profile-micro-button"
+                }, "Report"), React.createElement("div", {
                     className: "user-profile-micro-bottom"
                 }, React.createElement("div", {
                     onMouseDown: this.view_profile.bind(this),
@@ -21035,7 +21587,7 @@ var UserProfile = function(e) {
                 }, "View Profile"), React.createElement("div", {
                     onMouseDown: this.message.bind(this),
                     className: "user-profile-micro-button"
-                }, "Message"), this.mod_button(), e, React.createElement("div", {
+                }, "Message"), t, this.mod_button(), e, React.createElement("div", {
                     onMouseDown: this.close.bind(this),
                     className: "user-profile-micro-button"
                 }, "Close"))
@@ -21171,6 +21723,175 @@ var UserProfile = function(e) {
                     "data-ad-layout": this.props.layout,
                     "data-ad-format": this.props.format
                 }))
+            }
+        }]), t
+    }(React.Component),
+    _createClass = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var r = t[n];
+                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+            }
+        }
+        return function(t, n, r) {
+            return n && e(t.prototype, n), r && e(t, r), t
+        }
+    }(),
+    _get = function(e, t, n) {
+        for (var r = !0; r;) {
+            var a = e,
+                i = t,
+                o = n;
+            r = !1, null === a && (a = Function.prototype);
+            var s = Object.getOwnPropertyDescriptor(a, i);
+            if (s !== undefined) {
+                if ("value" in s) return s.value;
+                var c = s.get;
+                return c === undefined ? undefined : c.call(o)
+            }
+            var l = Object.getPrototypeOf(a);
+            if (null === l) return undefined;
+            e = l, t = i, n = o, r = !0, s = l = undefined
+        }
+    },
+    VideoModeration = function(e) {
+        function t(e) {
+            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
+                video_moderations: []
+            }, this["delete"] = this["delete"].bind(this), this.bulk_delete = this.bulk_delete.bind(this)
+        }
+        return _inherits(t, e), _createClass(t, [{
+            key: "componentDidMount",
+            value: function() {
+                this.fetch_data()
+            }
+        }, {
+            key: "fetch_data",
+            value: function() {
+                $.ajax({
+                    type: "GET",
+                    url: "/video_moderations",
+                    dataType: "json",
+                    success: function(e) {
+                        state = {
+                            video_moderations: e
+                        }, this.setState(state)
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "delete",
+            value: function(e) {
+                $.ajax({
+                    type: "DELETE",
+                    url: "/video_moderations/" + e,
+                    dataType: "json",
+                    success: function() {
+                        state = {
+                            video_moderations: this.state.video_moderations.filter(function(t) {
+                                return t.id != e
+                            })
+                        }, this.setState(state)
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "bulk_delete",
+            value: function(e) {
+                $.ajax({
+                    type: "DELETE",
+                    url: "/video_moderations/bulk_delete?all=" + e,
+                    dataType: "json",
+                    success: function() {
+                        e ? this.setState({
+                            video_moderations: []
+                        }) : this.fetch_data()
+                    }.bind(this)
+                })
+            }
+        }, {
+            key: "render",
+            value: function() {
+                var e = this;
+                return React.createElement("div", {
+                    className: "dashboard-background"
+                }, React.createElement("div", {
+                    className: "dashboard-container"
+                }, React.createElement("div", {
+                    className: "meet-cards-container video-moderation"
+                }, React.createElement("div", {
+                    className: "video-moderation-controls-container"
+                }, React.createElement("button", {
+                    className: "ui-button-match-mega gold-button",
+                    onClick: function() {
+                        return e.bulk_delete(!1)
+                    }
+                }, "Delete 100"), React.createElement("button", {
+                    className: "ui-button-match-mega red-button",
+                    onClick: function() {
+                        return e.bulk_delete(!0)
+                    }
+                }, "Delete All")), React.createElement("div", null, this.state.video_moderations.map(function(t) {
+                    return React.createElement(VideoModerationUnit, {
+                        key: "video_moderation" + t.id,
+                        data: t,
+                        "delete": e["delete"]
+                    })
+                })))))
+            }
+        }]), t
+    }(React.Component),
+    _createClass = function() {
+        function e(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var r = t[n];
+                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
+            }
+        }
+        return function(t, n, r) {
+            return n && e(t.prototype, n), r && e(t, r), t
+        }
+    }(),
+    _get = function(e, t, n) {
+        for (var r = !0; r;) {
+            var a = e,
+                i = t,
+                o = n;
+            r = !1, null === a && (a = Function.prototype);
+            var s = Object.getOwnPropertyDescriptor(a, i);
+            if (s !== undefined) {
+                if ("value" in s) return s.value;
+                var c = s.get;
+                return c === undefined ? undefined : c.call(o)
+            }
+            var l = Object.getPrototypeOf(a);
+            if (null === l) return undefined;
+            e = l, t = i, n = o, r = !0, s = l = undefined
+        }
+    },
+    VideoModerationUnit = function(e) {
+        function t(e) {
+            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this["delete"] = this["delete"].bind(this)
+        }
+        return _inherits(t, e), _createClass(t, [{
+            key: "delete",
+            value: function() {
+                this.props["delete"](this.props.data.id)
+            }
+        }, {
+            key: "render",
+            value: function() {
+                return data = this.props.data, React.createElement("div", {
+                    className: "dashboard-button animated",
+                    style: {
+                        paddingTop: "30px"
+                    }
+                }, React.createElement("img", {
+                    src: data.image_url
+                }), React.createElement("h2", null, data.display_name + "(" + data.username + ")"), React.createElement("button", {
+                    className: "ui-button-match-mega gold-button",
+                    onClick: this["delete"]
+                }, "Delete"))
             }
         }]), t
     }(React.Component);
@@ -21528,41 +22249,45 @@ var UserProfile = function(e) {
         }
     }.call(this);
 var Nsfw = {
-    live_endpoint: "/nsfw",
-    get: function() {
-        var e = document.getElementById("localVideo"),
-            t = document.createElement("canvas");
-        if (e) {
-            t.height = 150, t.width = 150;
-            t.getContext("2d").drawImage(e, 0, 0, t.width, t.height);
-            return (new Image).src = t.toDataURL(), t.toDataURL().split(",")[1]
-        }
-    },
-    check: function() {
-        var e = Nsfw.get();
-        if (e) {
-            var t = this.b64toBlob(e, null, null),
-                n = new FormData;
-            n.append("image", t);
-            var r = new XMLHttpRequest;
-            r.open("POST", this.live_endpoint), r.send(n), r.onreadystatechange = function() {
-                r.readyState
+        live_endpoint: "/nsfw",
+        get: function() {
+            var e = document.getElementById("remoteVideos").children[0],
+                t = document.createElement("canvas");
+            if (e) {
+                t.height = 150, t.width = 150;
+                t.getContext("2d").drawImage(e, 0, 0, t.width, t.height);
+                return (new Image).src = t.toDataURL(), t.toDataURL().split(",")[1]
             }
+        },
+        check: function() {
+            var e = Nsfw.get(),
+                t = document.getElementById("matched-message");
+            if (e && t) {
+                var n = this.b64toBlob(e, null, null),
+                    r = new FormData;
+                r.append("image", n), r.append("user_id", t.getAttribute("data-matched-id"));
+                var a = new XMLHttpRequest;
+                a.open("POST", this.live_endpoint), a.send(r), a.onreadystatechange = function() {
+                    a.readyState
+                }
+            }
+        },
+        b64toBlob: function(e, t, n) {
+            t = t || "", n = n || 512;
+            for (var r = atob(e), a = [], i = 0; i < r.length; i += n) {
+                for (var o = r.slice(i, i + n), s = new Array(o.length), c = 0; c < o.length; c++) s[c] = o.charCodeAt(c);
+                var l = new Uint8Array(s);
+                a.push(l)
+            }
+            return new Blob(a, {
+                type: t
+            })
         }
     },
-    b64toBlob: function(e, t, n) {
-        t = t || "", n = n || 512;
-        for (var r = atob(e), a = [], i = 0; i < r.length; i += n) {
-            for (var o = r.slice(i, i + n), s = new Array(o.length), c = 0; c < o.length; c++) s[c] = o.charCodeAt(c);
-            var l = new Uint8Array(s);
-            a.push(l)
-        }
-        return new Blob(a, {
-            type: t
-        })
-    }
-};
-setInterval(function() {}, 12e4),
+    moderationEnabled = document.head.querySelector("meta[name=video-moderation]").content;
+setInterval(function() {
+        moderationEnabled && Nsfw.check()
+    }, 12e4),
     function() {
         App.params = {}
     }.call(this),
@@ -21834,14 +22559,15 @@ window.addEventListener("load", function() {
         client: null,
         stream: null,
         init: function() {
-            App.webrtc.client = new SimpleWebRTC({
+            var e = document.head.querySelector("meta[name=web-rtc-url]").content;
+            e || (e = "https://webrtc.emeraldchat.com:8888/"), App.webrtc.client = new SimpleWebRTC({
                 localVideoEl: "localVideo",
-                remoteVideosEl: "remotesVideos",
+                remoteVideosEl: "remoteVideos",
                 autoRequestMedia: !0,
                 audio: !0,
                 media: App.webrtc.get_media(),
                 debug: !1,
-                url: "https://webrtc.emeraldchat.com:8888/"
+                url: e
             }), App.webrtc.client.on("videoAdded", function(e, t) {
                 console.log(t, "# peer added #");
                 var n = [];
@@ -22119,10 +22845,11 @@ window.addEventListener("load", function() {
                     });
                     var a = 0;
                     return t.codecs.forEach(function(e) {
-                        e.maxptime > a && (a = e.maxptime)
-                    }), a > 0 && (r += "a=maxptime:" + a + "\r\n"), r += "a=rtcp-mux\r\n", t.headerExtensions.forEach(function(e) {
-                        r += n.writeExtmap(e)
-                    }), r
+                            e.maxptime > a && (a = e.maxptime)
+                        }), a > 0 && (r += "a=maxptime:" + a + "\r\n"), r += "a=rtcp-mux\r\n",
+                        t.headerExtensions.forEach(function(e) {
+                            r += n.writeExtmap(e)
+                        }), r
                 }, n.parseRtpEncodingParameters = function(e) {
                     var t, r = [],
                         a = n.parseRtpParameters(e),
@@ -23091,7 +23818,8 @@ window.addEventListener("load", function() {
                     }, s.prototype._updateSignalingState = function(e) {
                         this.signalingState = e;
                         var t = new Event("signalingstatechange");
-                        this.dispatchEvent(t), null !== this.onsignalingstatechange && this.onsignalingstatechange(t)
+                        this.dispatchEvent(t),
+                            null !== this.onsignalingstatechange && this.onsignalingstatechange(t)
                     }, s.prototype._maybeFireNegotiationNeeded = function() {
                         var t = this;
                         "stable" === this.signalingState && !0 !== this.needNegotiation && (this.needNegotiation = !0, e.setTimeout(function() {
@@ -24023,453 +24751,454 @@ window.addEventListener("load", function() {
                                 })
                             }
                             window.RTCPeerConnection = function(e) {
-                                var t = this,
-                                    n = document.createDocumentFragment();
-                                if (["addEventListener", "removeEventListener", "dispatchEvent"].forEach(function(e) {
-                                        t[e] = n[e].bind(n)
-                                    }), this.onicecandidate = null, this.onaddstream = null, this.ontrack = null, this.onremovestream = null, this.onsignalingstatechange = null, this.oniceconnectionstatechange = null, this.onnegotiationneeded = null, this.ondatachannel = null, this.localStreams = [], this.remoteStreams = [], this.getLocalStreams = function() {
-                                        return t.localStreams
-                                    }, this.getRemoteStreams = function() {
-                                        return t.remoteStreams
-                                    }, this.localDescription = new RTCSessionDescription({
-                                        type: "",
-                                        sdp: ""
-                                    }), this.remoteDescription = new RTCSessionDescription({
-                                        type: "",
-                                        sdp: ""
-                                    }), this.signalingState = "stable", this.iceConnectionState = "new", this.iceGatheringState = "new", this.iceOptions = {
-                                        gatherPolicy: "all",
-                                        iceServers: []
-                                    }, e && e.iceTransportPolicy) switch (e.iceTransportPolicy) {
-                                    case "all":
-                                    case "relay":
-                                        this.iceOptions.gatherPolicy = e.iceTransportPolicy;
-                                        break;
-                                    case "none":
-                                        throw new TypeError('iceTransportPolicy "none" not supported')
-                                }
-                                if (this.usingBundle = e && "max-bundle" === e.bundlePolicy, e && e.iceServers) {
-                                    var a = JSON.parse(JSON.stringify(e.iceServers));
-                                    this.iceOptions.iceServers = a.filter(function(e) {
-                                        if (e && e.urls) {
-                                            var t = e.urls;
-                                            return "string" == typeof t && (t = [t]), !!(t = t.filter(function(e) {
-                                                return 0 === e.indexOf("turn:") && -1 !== e.indexOf("transport=udp") && -1 === e.indexOf("turn:[") || 0 === e.indexOf("stun:") && r.version >= 14393
-                                            })[0])
-                                        }
-                                        return !1
-                                    })
-                                }
-                                this._config = e, this.transceivers = [], this._localIceCandidatesBuffer = []
-                            }, window.RTCPeerConnection.prototype._emitBufferedCandidates = function() {
-                                var e = this,
-                                    t = n.splitSections(e.localDescription.sdp);
-                                this._localIceCandidatesBuffer.forEach(function(n) {
-                                    if (n.candidate && 0 !== Object.keys(n.candidate).length) - 1 === n.candidate.candidate.indexOf("typ endOfCandidates") && (t[n.candidate.sdpMLineIndex + 1] += "a=" + n.candidate.candidate + "\r\n");
-                                    else
-                                        for (var r = 1; r < t.length; r++) - 1 === t[r].indexOf("\r\na=end-of-candidates\r\n") && (t[r] += "a=end-of-candidates\r\n");
-                                    if (e.localDescription.sdp = t.join(""), e.dispatchEvent(n), null !== e.onicecandidate && e.onicecandidate(n), !n.candidate && "complete" !== e.iceGatheringState) {
-                                        e.transceivers.every(function(e) {
-                                            return e.iceGatherer && "completed" === e.iceGatherer.state
-                                        }) && (e.iceGatheringState = "complete")
-                                    }
-                                }), this._localIceCandidatesBuffer = []
-                            }, window.RTCPeerConnection.prototype.getConfiguration = function() {
-                                return this._config
-                            }, window.RTCPeerConnection.prototype.addStream = function(e) {
-                                var t = e.clone();
-                                e.getTracks().forEach(function(e, n) {
-                                    var r = t.getTracks()[n];
-                                    e.addEventListener("enabled", function(e) {
-                                        r.enabled = e.enabled
-                                    })
-                                }), this.localStreams.push(t), this._maybeFireNegotiationNeeded()
-                            }, window.RTCPeerConnection.prototype.removeStream = function(e) {
-                                var t = this.localStreams.indexOf(e);
-                                t > -1 && (this.localStreams.splice(t, 1), this._maybeFireNegotiationNeeded())
-                            }, window.RTCPeerConnection.prototype.getSenders = function() {
-                                return this.transceivers.filter(function(e) {
-                                    return !!e.rtpSender
-                                }).map(function(e) {
-                                    return e.rtpSender
-                                })
-                            }, window.RTCPeerConnection.prototype.getReceivers = function() {
-                                return this.transceivers.filter(function(e) {
-                                    return !!e.rtpReceiver
-                                }).map(function(e) {
-                                    return e.rtpReceiver
-                                })
-                            }, window.RTCPeerConnection.prototype._getCommonCapabilities = function(e, t) {
-                                var n = {
-                                    codecs: [],
-                                    headerExtensions: [],
-                                    fecMechanisms: []
-                                };
-                                return e.codecs.forEach(function(e) {
-                                    for (var r = 0; r < t.codecs.length; r++) {
-                                        var a = t.codecs[r];
-                                        if (e.name.toLowerCase() === a.name.toLowerCase() && e.clockRate === a.clockRate) {
-                                            a.numChannels = Math.min(e.numChannels, a.numChannels), n.codecs.push(a), a.rtcpFeedback = a.rtcpFeedback.filter(function(t) {
-                                                for (var n = 0; n < e.rtcpFeedback.length; n++)
-                                                    if (e.rtcpFeedback[n].type === t.type && e.rtcpFeedback[n].parameter === t.parameter) return !0;
-                                                return !1
-                                            });
-                                            break
-                                        }
-                                    }
-                                }), e.headerExtensions.forEach(function(e) {
-                                    for (var r = 0; r < t.headerExtensions.length; r++) {
-                                        var a = t.headerExtensions[r];
-                                        if (e.uri === a.uri) {
-                                            n.headerExtensions.push(a);
-                                            break
-                                        }
-                                    }
-                                }), n
-                            }, window.RTCPeerConnection.prototype._createIceAndDtlsTransports = function(e, t) {
-                                var r = this,
-                                    a = new RTCIceGatherer(r.iceOptions),
-                                    i = new RTCIceTransport(a);
-                                a.onlocalcandidate = function(o) {
-                                    var s = new Event("icecandidate");
-                                    s.candidate = {
-                                        sdpMid: e,
-                                        sdpMLineIndex: t
-                                    };
-                                    var c = o.candidate,
-                                        l = !c || 0 === Object.keys(c).length;
-                                    l ? (a.state === undefined && (a.state = "completed"), s.candidate.candidate = "candidate:1 1 udp 1 0.0.0.0 9 typ endOfCandidates") : (c.component = "RTCP" === i.component ? 2 : 1, s.candidate.candidate = n.writeCandidate(c));
-                                    var u = n.splitSections(r.localDescription.sdp); - 1 === s.candidate.candidate.indexOf("typ endOfCandidates") ? u[s.candidate.sdpMLineIndex + 1] += "a=" + s.candidate.candidate + "\r\n" : u[s.candidate.sdpMLineIndex + 1] += "a=end-of-candidates\r\n", r.localDescription.sdp = u.join("");
-                                    var d = r.transceivers.every(function(e) {
-                                        return e.iceGatherer && "completed" === e.iceGatherer.state
-                                    });
-                                    switch (r.iceGatheringState) {
-                                        case "new":
-                                            r._localIceCandidatesBuffer.push(s), l && d && r._localIceCandidatesBuffer.push(new Event("icecandidate"));
+                                    var t = this,
+                                        n = document.createDocumentFragment();
+                                    if (["addEventListener", "removeEventListener", "dispatchEvent"].forEach(function(e) {
+                                            t[e] = n[e].bind(n)
+                                        }), this.onicecandidate = null, this.onaddstream = null, this.ontrack = null, this.onremovestream = null, this.onsignalingstatechange = null, this.oniceconnectionstatechange = null, this.onnegotiationneeded = null, this.ondatachannel = null, this.localStreams = [], this.remoteStreams = [], this.getLocalStreams = function() {
+                                            return t.localStreams
+                                        }, this.getRemoteStreams = function() {
+                                            return t.remoteStreams
+                                        }, this.localDescription = new RTCSessionDescription({
+                                            type: "",
+                                            sdp: ""
+                                        }), this.remoteDescription = new RTCSessionDescription({
+                                            type: "",
+                                            sdp: ""
+                                        }), this.signalingState = "stable", this.iceConnectionState = "new", this.iceGatheringState = "new", this.iceOptions = {
+                                            gatherPolicy: "all",
+                                            iceServers: []
+                                        }, e && e.iceTransportPolicy) switch (e.iceTransportPolicy) {
+                                        case "all":
+                                        case "relay":
+                                            this.iceOptions.gatherPolicy = e.iceTransportPolicy;
                                             break;
-                                        case "gathering":
-                                            r._emitBufferedCandidates(), r.dispatchEvent(s), null !== r.onicecandidate && r.onicecandidate(s), d && (r.dispatchEvent(new Event("icecandidate")), null !== r.onicecandidate && r.onicecandidate(new Event("icecandidate")), r.iceGatheringState = "complete")
+                                        case "none":
+                                            throw new TypeError('iceTransportPolicy "none" not supported')
                                     }
-                                }, i.onicestatechange = function() {
-                                    r._updateConnectionState()
-                                };
-                                var o = new RTCDtlsTransport(i);
-                                return o.ondtlsstatechange = function() {
-                                    r._updateConnectionState()
-                                }, o.onerror = function() {
-                                    o.state = "failed", r._updateConnectionState()
-                                }, {
-                                    iceGatherer: a,
-                                    iceTransport: i,
-                                    dtlsTransport: o
-                                }
-                            }, window.RTCPeerConnection.prototype._transceive = function(e, t, r) {
-                                var a = this._getCommonCapabilities(e.localCapabilities, e.remoteCapabilities);
-                                t && e.rtpSender && (a.encodings = e.sendEncodingParameters, a.rtcp = {
-                                    cname: n.localCName
-                                }, e.recvEncodingParameters.length && (a.rtcp.ssrc = e.recvEncodingParameters[0].ssrc), e.rtpSender.send(a)), r && e.rtpReceiver && ("video" === e.kind && e.recvEncodingParameters && e.recvEncodingParameters.forEach(function(e) {
-                                    delete e.rtx
-                                }), a.encodings = e.recvEncodingParameters, a.rtcp = {
-                                    cname: e.cname
-                                }, e.sendEncodingParameters.length && (a.rtcp.ssrc = e.sendEncodingParameters[0].ssrc), e.rtpReceiver.receive(a))
-                            }, window.RTCPeerConnection.prototype.setLocalDescription = function(e) {
-                                var t, r, a = this;
-                                if ("offer" === e.type) this._pendingOffer && (t = n.splitSections(e.sdp), r = t.shift(), t.forEach(function(e, t) {
-                                    var r = n.parseRtpParameters(e);
-                                    a._pendingOffer[t].localCapabilities = r
-                                }), this.transceivers = this._pendingOffer, delete this._pendingOffer);
-                                else if ("answer" === e.type) {
-                                    t = n.splitSections(a.remoteDescription.sdp), r = t.shift();
-                                    var i = n.matchPrefix(r, "a=ice-lite").length > 0;
-                                    t.forEach(function(e, t) {
-                                        var o = a.transceivers[t],
-                                            s = o.iceGatherer,
-                                            c = o.iceTransport,
-                                            l = o.dtlsTransport,
-                                            u = o.localCapabilities,
-                                            d = o.remoteCapabilities;
-                                        if ("0" !== e.split("\n", 1)[0].split(" ", 2)[1] && !o.isDatachannel) {
-                                            var p = n.getIceParameters(e, r);
-                                            if (i) {
-                                                var f = n.matchPrefix(e, "a=candidate:").map(function(e) {
+                                    if (this.usingBundle = e && "max-bundle" === e.bundlePolicy, e && e.iceServers) {
+                                        var a = JSON.parse(JSON.stringify(e.iceServers));
+                                        this.iceOptions.iceServers = a.filter(function(e) {
+                                            if (e && e.urls) {
+                                                var t = e.urls;
+                                                return "string" == typeof t && (t = [t]), !!(t = t.filter(function(e) {
+                                                    return 0 === e.indexOf("turn:") && -1 !== e.indexOf("transport=udp") && -1 === e.indexOf("turn:[") || 0 === e.indexOf("stun:") && r.version >= 14393
+                                                })[0])
+                                            }
+                                            return !1
+                                        })
+                                    }
+                                    this._config = e, this.transceivers = [], this._localIceCandidatesBuffer = []
+                                }, window.RTCPeerConnection.prototype._emitBufferedCandidates = function() {
+                                    var e = this,
+                                        t = n.splitSections(e.localDescription.sdp);
+                                    this._localIceCandidatesBuffer.forEach(function(n) {
+                                        if (n.candidate && 0 !== Object.keys(n.candidate).length) - 1 === n.candidate.candidate.indexOf("typ endOfCandidates") && (t[n.candidate.sdpMLineIndex + 1] += "a=" + n.candidate.candidate + "\r\n");
+                                        else
+                                            for (var r = 1; r < t.length; r++) - 1 === t[r].indexOf("\r\na=end-of-candidates\r\n") && (t[r] += "a=end-of-candidates\r\n");
+                                        if (e.localDescription.sdp = t.join(""), e.dispatchEvent(n), null !== e.onicecandidate && e.onicecandidate(n), !n.candidate && "complete" !== e.iceGatheringState) {
+                                            e.transceivers.every(function(e) {
+                                                return e.iceGatherer && "completed" === e.iceGatherer.state
+                                            }) && (e.iceGatheringState = "complete")
+                                        }
+                                    }), this._localIceCandidatesBuffer = []
+                                }, window.RTCPeerConnection.prototype.getConfiguration = function() {
+                                    return this._config
+                                }, window.RTCPeerConnection.prototype.addStream = function(e) {
+                                    var t = e.clone();
+                                    e.getTracks().forEach(function(e, n) {
+                                        var r = t.getTracks()[n];
+                                        e.addEventListener("enabled", function(e) {
+                                            r.enabled = e.enabled
+                                        })
+                                    }), this.localStreams.push(t), this._maybeFireNegotiationNeeded()
+                                }, window.RTCPeerConnection.prototype.removeStream = function(e) {
+                                    var t = this.localStreams.indexOf(e);
+                                    t > -1 && (this.localStreams.splice(t, 1), this._maybeFireNegotiationNeeded())
+                                }, window.RTCPeerConnection.prototype.getSenders = function() {
+                                    return this.transceivers.filter(function(e) {
+                                        return !!e.rtpSender
+                                    }).map(function(e) {
+                                        return e.rtpSender
+                                    })
+                                }, window.RTCPeerConnection.prototype.getReceivers = function() {
+                                    return this.transceivers.filter(function(e) {
+                                        return !!e.rtpReceiver
+                                    }).map(function(e) {
+                                        return e.rtpReceiver
+                                    })
+                                }, window.RTCPeerConnection.prototype._getCommonCapabilities = function(e, t) {
+                                    var n = {
+                                        codecs: [],
+                                        headerExtensions: [],
+                                        fecMechanisms: []
+                                    };
+                                    return e.codecs.forEach(function(e) {
+                                        for (var r = 0; r < t.codecs.length; r++) {
+                                            var a = t.codecs[r];
+                                            if (e.name.toLowerCase() === a.name.toLowerCase() && e.clockRate === a.clockRate) {
+                                                a.numChannels = Math.min(e.numChannels, a.numChannels), n.codecs.push(a), a.rtcpFeedback = a.rtcpFeedback.filter(function(t) {
+                                                    for (var n = 0; n < e.rtcpFeedback.length; n++)
+                                                        if (e.rtcpFeedback[n].type === t.type && e.rtcpFeedback[n].parameter === t.parameter) return !0;
+                                                    return !1
+                                                });
+                                                break
+                                            }
+                                        }
+                                    }), e.headerExtensions.forEach(function(e) {
+                                        for (var r = 0; r < t.headerExtensions.length; r++) {
+                                            var a = t.headerExtensions[r];
+                                            if (e.uri === a.uri) {
+                                                n.headerExtensions.push(a);
+                                                break
+                                            }
+                                        }
+                                    }), n
+                                },
+                                window.RTCPeerConnection.prototype._createIceAndDtlsTransports = function(e, t) {
+                                    var r = this,
+                                        a = new RTCIceGatherer(r.iceOptions),
+                                        i = new RTCIceTransport(a);
+                                    a.onlocalcandidate = function(o) {
+                                        var s = new Event("icecandidate");
+                                        s.candidate = {
+                                            sdpMid: e,
+                                            sdpMLineIndex: t
+                                        };
+                                        var c = o.candidate,
+                                            l = !c || 0 === Object.keys(c).length;
+                                        l ? (a.state === undefined && (a.state = "completed"), s.candidate.candidate = "candidate:1 1 udp 1 0.0.0.0 9 typ endOfCandidates") : (c.component = "RTCP" === i.component ? 2 : 1, s.candidate.candidate = n.writeCandidate(c));
+                                        var u = n.splitSections(r.localDescription.sdp); - 1 === s.candidate.candidate.indexOf("typ endOfCandidates") ? u[s.candidate.sdpMLineIndex + 1] += "a=" + s.candidate.candidate + "\r\n" : u[s.candidate.sdpMLineIndex + 1] += "a=end-of-candidates\r\n", r.localDescription.sdp = u.join("");
+                                        var d = r.transceivers.every(function(e) {
+                                            return e.iceGatherer && "completed" === e.iceGatherer.state
+                                        });
+                                        switch (r.iceGatheringState) {
+                                            case "new":
+                                                r._localIceCandidatesBuffer.push(s), l && d && r._localIceCandidatesBuffer.push(new Event("icecandidate"));
+                                                break;
+                                            case "gathering":
+                                                r._emitBufferedCandidates(), r.dispatchEvent(s), null !== r.onicecandidate && r.onicecandidate(s), d && (r.dispatchEvent(new Event("icecandidate")), null !== r.onicecandidate && r.onicecandidate(new Event("icecandidate")), r.iceGatheringState = "complete")
+                                        }
+                                    }, i.onicestatechange = function() {
+                                        r._updateConnectionState()
+                                    };
+                                    var o = new RTCDtlsTransport(i);
+                                    return o.ondtlsstatechange = function() {
+                                        r._updateConnectionState()
+                                    }, o.onerror = function() {
+                                        o.state = "failed", r._updateConnectionState()
+                                    }, {
+                                        iceGatherer: a,
+                                        iceTransport: i,
+                                        dtlsTransport: o
+                                    }
+                                }, window.RTCPeerConnection.prototype._transceive = function(e, t, r) {
+                                    var a = this._getCommonCapabilities(e.localCapabilities, e.remoteCapabilities);
+                                    t && e.rtpSender && (a.encodings = e.sendEncodingParameters, a.rtcp = {
+                                        cname: n.localCName
+                                    }, e.recvEncodingParameters.length && (a.rtcp.ssrc = e.recvEncodingParameters[0].ssrc), e.rtpSender.send(a)), r && e.rtpReceiver && ("video" === e.kind && e.recvEncodingParameters && e.recvEncodingParameters.forEach(function(e) {
+                                        delete e.rtx
+                                    }), a.encodings = e.recvEncodingParameters, a.rtcp = {
+                                        cname: e.cname
+                                    }, e.sendEncodingParameters.length && (a.rtcp.ssrc = e.sendEncodingParameters[0].ssrc), e.rtpReceiver.receive(a))
+                                }, window.RTCPeerConnection.prototype.setLocalDescription = function(e) {
+                                    var t, r, a = this;
+                                    if ("offer" === e.type) this._pendingOffer && (t = n.splitSections(e.sdp), r = t.shift(), t.forEach(function(e, t) {
+                                        var r = n.parseRtpParameters(e);
+                                        a._pendingOffer[t].localCapabilities = r
+                                    }), this.transceivers = this._pendingOffer, delete this._pendingOffer);
+                                    else if ("answer" === e.type) {
+                                        t = n.splitSections(a.remoteDescription.sdp), r = t.shift();
+                                        var i = n.matchPrefix(r, "a=ice-lite").length > 0;
+                                        t.forEach(function(e, t) {
+                                            var o = a.transceivers[t],
+                                                s = o.iceGatherer,
+                                                c = o.iceTransport,
+                                                l = o.dtlsTransport,
+                                                u = o.localCapabilities,
+                                                d = o.remoteCapabilities;
+                                            if ("0" !== e.split("\n", 1)[0].split(" ", 2)[1] && !o.isDatachannel) {
+                                                var p = n.getIceParameters(e, r);
+                                                if (i) {
+                                                    var f = n.matchPrefix(e, "a=candidate:").map(function(e) {
+                                                        return n.parseCandidate(e)
+                                                    }).filter(function(e) {
+                                                        return "1" === e.component
+                                                    });
+                                                    f.length && c.setRemoteCandidates(f)
+                                                }
+                                                var m = n.getDtlsParameters(e, r);
+                                                i && (m.role = "server"), a.usingBundle && 0 !== t || (c.start(s, p, i ? "controlling" : "controlled"), l.start(m));
+                                                var h = a._getCommonCapabilities(u, d);
+                                                a._transceive(o, h.codecs.length > 0, !1)
+                                            }
+                                        })
+                                    }
+                                    switch (this.localDescription = {
+                                            type: e.type,
+                                            sdp: e.sdp
+                                        }, e.type) {
+                                        case "offer":
+                                            this._updateSignalingState("have-local-offer");
+                                            break;
+                                        case "answer":
+                                            this._updateSignalingState("stable");
+                                            break;
+                                        default:
+                                            throw new TypeError('unsupported type "' + e.type + '"')
+                                    }
+                                    var o = arguments.length > 1 && "function" == typeof arguments[1];
+                                    if (o) {
+                                        var s = arguments[1];
+                                        window.setTimeout(function() {
+                                            s(), "new" === a.iceGatheringState && (a.iceGatheringState = "gathering"), a._emitBufferedCandidates()
+                                        }, 0)
+                                    }
+                                    var c = Promise.resolve();
+                                    return c.then(function() {
+                                        o || ("new" === a.iceGatheringState && (a.iceGatheringState = "gathering"), window.setTimeout(a._emitBufferedCandidates.bind(a), 500))
+                                    }), c
+                                }, window.RTCPeerConnection.prototype.setRemoteDescription = function(e) {
+                                    var t = this,
+                                        r = new MediaStream,
+                                        a = [],
+                                        i = n.splitSections(e.sdp),
+                                        o = i.shift(),
+                                        s = n.matchPrefix(o, "a=ice-lite").length > 0;
+                                    switch (this.usingBundle = n.matchPrefix(o, "a=group:BUNDLE ").length > 0, i.forEach(function(i, c) {
+                                            var l = n.splitLines(i),
+                                                u = l[0].substr(2).split(" "),
+                                                d = u[0],
+                                                p = "0" === u[1],
+                                                f = n.getDirection(i, o),
+                                                m = n.matchPrefix(i, "a=mid:");
+                                            if (m = m.length ? m[0].substr(6) : n.generateIdentifier(), "application" === d && "DTLS/SCTP" === u[2]) return void(t.transceivers[c] = {
+                                                mid: m,
+                                                isDatachannel: !0
+                                            });
+                                            var h, y, v, g, b, E, w, R, _, k, C, x, O = n.parseRtpParameters(i);
+                                            p || (C = n.getIceParameters(i, o), x = n.getDtlsParameters(i, o), x.role = "client"), R = n.parseRtpEncodingParameters(i);
+                                            var S, T = n.matchPrefix(i, "a=ssrc:").map(function(e) {
+                                                return n.parseSsrcMedia(e)
+                                            }).filter(function(e) {
+                                                return "cname" === e.attribute
+                                            })[0];
+                                            T && (S = T.value);
+                                            var N = n.matchPrefix(i, "a=end-of-candidates", o).length > 0,
+                                                P = n.matchPrefix(i, "a=candidate:").map(function(e) {
                                                     return n.parseCandidate(e)
                                                 }).filter(function(e) {
                                                     return "1" === e.component
                                                 });
-                                                f.length && c.setRemoteCandidates(f)
+                                            if ("offer" !== e.type || p) "answer" !== e.type || p || (h = t.transceivers[c], y = h.iceGatherer, v = h.iceTransport, g = h.dtlsTransport, b = h.rtpSender, E = h.rtpReceiver, w = h.sendEncodingParameters, _ = h.localCapabilities, t.transceivers[c].recvEncodingParameters = R, t.transceivers[c].remoteCapabilities = O, t.transceivers[c].cname = S, (s || N) && P.length && v.setRemoteCandidates(P), t.usingBundle && 0 !== c || (v.start(y, C, "controlling"), g.start(x)), t._transceive(h, "sendrecv" === f || "recvonly" === f, "sendrecv" === f || "sendonly" === f), !E || "sendrecv" !== f && "sendonly" !== f ? delete h.rtpReceiver : (k = E.track, a.push([k, E]), r.addTrack(k)));
+                                            else {
+                                                var j = t.usingBundle && c > 0 ? {
+                                                    iceGatherer: t.transceivers[0].iceGatherer,
+                                                    iceTransport: t.transceivers[0].iceTransport,
+                                                    dtlsTransport: t.transceivers[0].dtlsTransport
+                                                } : t._createIceAndDtlsTransports(m, c);
+                                                if (N && j.iceTransport.setRemoteCandidates(P), _ = RTCRtpReceiver.getCapabilities(d), _.codecs = _.codecs.filter(function(e) {
+                                                        return "rtx" !== e.name
+                                                    }), w = [{
+                                                        ssrc: 1001 * (2 * c + 2)
+                                                    }], E = new RTCRtpReceiver(j.dtlsTransport, d), k = E.track, a.push([k, E]), r.addTrack(k), t.localStreams.length > 0 && t.localStreams[0].getTracks().length >= c) {
+                                                    var M;
+                                                    "audio" === d ? M = t.localStreams[0].getAudioTracks()[0] : "video" === d && (M = t.localStreams[0].getVideoTracks()[0]), M && (b = new RTCRtpSender(M, j.dtlsTransport))
+                                                }
+                                                t.transceivers[c] = {
+                                                    iceGatherer: j.iceGatherer,
+                                                    iceTransport: j.iceTransport,
+                                                    dtlsTransport: j.dtlsTransport,
+                                                    localCapabilities: _,
+                                                    remoteCapabilities: O,
+                                                    rtpSender: b,
+                                                    rtpReceiver: E,
+                                                    kind: d,
+                                                    mid: m,
+                                                    cname: S,
+                                                    sendEncodingParameters: w,
+                                                    recvEncodingParameters: R
+                                                }, t._transceive(t.transceivers[c], !1, "sendrecv" === f || "sendonly" === f)
                                             }
-                                            var m = n.getDtlsParameters(e, r);
-                                            i && (m.role = "server"), a.usingBundle && 0 !== t || (c.start(s, p, i ? "controlling" : "controlled"), l.start(m));
-                                            var h = a._getCommonCapabilities(u, d);
-                                            a._transceive(o, h.codecs.length > 0, !1)
-                                        }
-                                    })
-                                }
-                                switch (this.localDescription = {
-                                        type: e.type,
-                                        sdp: e.sdp
-                                    }, e.type) {
-                                    case "offer":
-                                        this._updateSignalingState("have-local-offer");
-                                        break;
-                                    case "answer":
-                                        this._updateSignalingState("stable");
-                                        break;
-                                    default:
-                                        throw new TypeError('unsupported type "' + e.type + '"')
-                                }
-                                var o = arguments.length > 1 && "function" == typeof arguments[1];
-                                if (o) {
-                                    var s = arguments[1];
-                                    window.setTimeout(function() {
-                                        s(), "new" === a.iceGatheringState && (a.iceGatheringState = "gathering"), a._emitBufferedCandidates()
-                                    }, 0)
-                                }
-                                var c = Promise.resolve();
-                                return c.then(function() {
-                                    o || ("new" === a.iceGatheringState && (a.iceGatheringState = "gathering"), window.setTimeout(a._emitBufferedCandidates.bind(a), 500))
-                                }), c
-                            }, window.RTCPeerConnection.prototype.setRemoteDescription = function(e) {
-                                var t = this,
-                                    r = new MediaStream,
-                                    a = [],
-                                    i = n.splitSections(e.sdp),
-                                    o = i.shift(),
-                                    s = n.matchPrefix(o, "a=ice-lite").length > 0;
-                                switch (this.usingBundle = n.matchPrefix(o, "a=group:BUNDLE ").length > 0, i.forEach(function(i, c) {
-                                        var l = n.splitLines(i),
-                                            u = l[0].substr(2).split(" "),
-                                            d = u[0],
-                                            p = "0" === u[1],
-                                            f = n.getDirection(i, o),
-                                            m = n.matchPrefix(i, "a=mid:");
-                                        if (m = m.length ? m[0].substr(6) : n.generateIdentifier(), "application" === d && "DTLS/SCTP" === u[2]) return void(t.transceivers[c] = {
-                                            mid: m,
-                                            isDatachannel: !0
+                                        }), this.remoteDescription = {
+                                            type: e.type,
+                                            sdp: e.sdp
+                                        }, e.type) {
+                                        case "offer":
+                                            this._updateSignalingState("have-remote-offer");
+                                            break;
+                                        case "answer":
+                                            this._updateSignalingState("stable");
+                                            break;
+                                        default:
+                                            throw new TypeError('unsupported type "' + e.type + '"')
+                                    }
+                                    return r.getTracks().length && (t.remoteStreams.push(r), window.setTimeout(function() {
+                                        var e = new Event("addstream");
+                                        e.stream = r, t.dispatchEvent(e), null !== t.onaddstream && window.setTimeout(function() {
+                                            t.onaddstream(e)
+                                        }, 0), a.forEach(function(n) {
+                                            var a = n[0],
+                                                i = n[1],
+                                                o = new Event("track");
+                                            o.track = a, o.receiver = i, o.streams = [r], t.dispatchEvent(e), null !== t.ontrack && window.setTimeout(function() {
+                                                t.ontrack(o)
+                                            }, 0)
+                                        })
+                                    }, 0)), arguments.length > 1 && "function" == typeof arguments[1] && window.setTimeout(arguments[1], 0), Promise.resolve()
+                                }, window.RTCPeerConnection.prototype.close = function() {
+                                    this.transceivers.forEach(function(e) {
+                                        e.iceTransport && e.iceTransport.stop(), e.dtlsTransport && e.dtlsTransport.stop(), e.rtpSender && e.rtpSender.stop(), e.rtpReceiver && e.rtpReceiver.stop()
+                                    }), this._updateSignalingState("closed")
+                                }, window.RTCPeerConnection.prototype._updateSignalingState = function(e) {
+                                    this.signalingState = e;
+                                    var t = new Event("signalingstatechange");
+                                    this.dispatchEvent(t), null !== this.onsignalingstatechange && this.onsignalingstatechange(t)
+                                }, window.RTCPeerConnection.prototype._maybeFireNegotiationNeeded = function() {
+                                    var e = new Event("negotiationneeded");
+                                    this.dispatchEvent(e), null !== this.onnegotiationneeded && this.onnegotiationneeded(e)
+                                }, window.RTCPeerConnection.prototype._updateConnectionState = function() {
+                                    var e, t = this,
+                                        n = {
+                                            "new": 0,
+                                            closed: 0,
+                                            connecting: 0,
+                                            checking: 0,
+                                            connected: 0,
+                                            completed: 0,
+                                            failed: 0
+                                        };
+                                    if (this.transceivers.forEach(function(e) {
+                                            n[e.iceTransport.state]++, n[e.dtlsTransport.state]++
+                                        }), n.connected += n.completed, e = "new", n.failed > 0 ? e = "failed" : n.connecting > 0 || n.checking > 0 ? e = "connecting" : n.disconnected > 0 ? e = "disconnected" : n["new"] > 0 ? e = "new" : (n.connected > 0 || n.completed > 0) && (e = "connected"), e !== t.iceConnectionState) {
+                                        t.iceConnectionState = e;
+                                        var r = new Event("iceconnectionstatechange");
+                                        this.dispatchEvent(r), null !== this.oniceconnectionstatechange && this.oniceconnectionstatechange(r)
+                                    }
+                                }, window.RTCPeerConnection.prototype.createOffer = function() {
+                                    var e = this;
+                                    if (this._pendingOffer) throw new Error("createOffer called while there is a pending offer.");
+                                    var t;
+                                    1 === arguments.length && "function" != typeof arguments[0] ? t = arguments[0] : 3 === arguments.length && (t = arguments[2]);
+                                    var r = [],
+                                        a = 0,
+                                        i = 0;
+                                    if (this.localStreams.length && (a = this.localStreams[0].getAudioTracks().length, i = this.localStreams[0].getVideoTracks().length), t) {
+                                        if (t.mandatory || t.optional) throw new TypeError("Legacy mandatory/optional constraints not supported.");
+                                        t.offerToReceiveAudio !== undefined && (a = t.offerToReceiveAudio), t.offerToReceiveVideo !== undefined && (i = t.offerToReceiveVideo)
+                                    }
+                                    for (this.localStreams.length && this.localStreams[0].getTracks().forEach(function(e) {
+                                            r.push({
+                                                kind: e.kind,
+                                                track: e,
+                                                wantReceive: "audio" === e.kind ? a > 0 : i > 0
+                                            }), "audio" === e.kind ? a-- : "video" === e.kind && i--
+                                        }); a > 0 || i > 0;) a > 0 && (r.push({
+                                        kind: "audio",
+                                        wantReceive: !0
+                                    }), a--), i > 0 && (r.push({
+                                        kind: "video",
+                                        wantReceive: !0
+                                    }), i--);
+                                    var o = n.writeSessionBoilerplate(),
+                                        s = [];
+                                    r.forEach(function(t, r) {
+                                        var a = t.track,
+                                            i = t.kind,
+                                            o = n.generateIdentifier(),
+                                            c = e.usingBundle && r > 0 ? {
+                                                iceGatherer: s[0].iceGatherer,
+                                                iceTransport: s[0].iceTransport,
+                                                dtlsTransport: s[0].dtlsTransport
+                                            } : e._createIceAndDtlsTransports(o, r),
+                                            l = RTCRtpSender.getCapabilities(i);
+                                        l.codecs = l.codecs.filter(function(e) {
+                                            return "rtx" !== e.name
+                                        }), l.codecs.forEach(function(e) {
+                                            "H264" === e.name && e.parameters["level-asymmetry-allowed"] === undefined && (e.parameters["level-asymmetry-allowed"] = "1")
                                         });
-                                        var h, y, v, g, b, E, w, R, _, k, C, x, O = n.parseRtpParameters(i);
-                                        p || (C = n.getIceParameters(i, o), x = n.getDtlsParameters(i, o), x.role = "client"), R = n.parseRtpEncodingParameters(i);
-                                        var S, T = n.matchPrefix(i, "a=ssrc:").map(function(e) {
-                                            return n.parseSsrcMedia(e)
-                                        }).filter(function(e) {
-                                            return "cname" === e.attribute
-                                        })[0];
-                                        T && (S = T.value);
-                                        var N = n.matchPrefix(i, "a=end-of-candidates", o).length > 0,
-                                            P = n.matchPrefix(i, "a=candidate:").map(function(e) {
-                                                return n.parseCandidate(e)
-                                            }).filter(function(e) {
-                                                return "1" === e.component
-                                            });
-                                        if ("offer" !== e.type || p) "answer" !== e.type || p || (h = t.transceivers[c], y = h.iceGatherer, v = h.iceTransport, g = h.dtlsTransport, b = h.rtpSender, E = h.rtpReceiver, w = h.sendEncodingParameters, _ = h.localCapabilities, t.transceivers[c].recvEncodingParameters = R, t.transceivers[c].remoteCapabilities = O, t.transceivers[c].cname = S, (s || N) && P.length && v.setRemoteCandidates(P), t.usingBundle && 0 !== c || (v.start(y, C, "controlling"), g.start(x)), t._transceive(h, "sendrecv" === f || "recvonly" === f, "sendrecv" === f || "sendonly" === f), !E || "sendrecv" !== f && "sendonly" !== f ? delete h.rtpReceiver : (k = E.track, a.push([k, E]), r.addTrack(k)));
-                                        else {
-                                            var j = t.usingBundle && c > 0 ? {
-                                                iceGatherer: t.transceivers[0].iceGatherer,
-                                                iceTransport: t.transceivers[0].iceTransport,
-                                                dtlsTransport: t.transceivers[0].dtlsTransport
-                                            } : t._createIceAndDtlsTransports(m, c);
-                                            if (N && j.iceTransport.setRemoteCandidates(P), _ = RTCRtpReceiver.getCapabilities(d), _.codecs = _.codecs.filter(function(e) {
-                                                    return "rtx" !== e.name
-                                                }), w = [{
-                                                    ssrc: 1001 * (2 * c + 2)
-                                                }], E = new RTCRtpReceiver(j.dtlsTransport, d), k = E.track, a.push([k, E]), r.addTrack(k), t.localStreams.length > 0 && t.localStreams[0].getTracks().length >= c) {
-                                                var M;
-                                                "audio" === d ? M = t.localStreams[0].getAudioTracks()[0] : "video" === d && (M = t.localStreams[0].getVideoTracks()[0]), M && (b = new RTCRtpSender(M, j.dtlsTransport))
-                                            }
-                                            t.transceivers[c] = {
-                                                iceGatherer: j.iceGatherer,
-                                                iceTransport: j.iceTransport,
-                                                dtlsTransport: j.dtlsTransport,
-                                                localCapabilities: _,
-                                                remoteCapabilities: O,
-                                                rtpSender: b,
-                                                rtpReceiver: E,
-                                                kind: d,
-                                                mid: m,
-                                                cname: S,
-                                                sendEncodingParameters: w,
-                                                recvEncodingParameters: R
-                                            }, t._transceive(t.transceivers[c], !1, "sendrecv" === f || "sendonly" === f)
+                                        var u, d, p = [{
+                                            ssrc: 1001 * (2 * r + 1)
+                                        }];
+                                        a && (u = new RTCRtpSender(a, c.dtlsTransport)), t.wantReceive && (d = new RTCRtpReceiver(c.dtlsTransport, i)), s[r] = {
+                                            iceGatherer: c.iceGatherer,
+                                            iceTransport: c.iceTransport,
+                                            dtlsTransport: c.dtlsTransport,
+                                            localCapabilities: l,
+                                            remoteCapabilities: null,
+                                            rtpSender: u,
+                                            rtpReceiver: d,
+                                            kind: i,
+                                            mid: o,
+                                            sendEncodingParameters: p,
+                                            recvEncodingParameters: null
                                         }
-                                    }), this.remoteDescription = {
-                                        type: e.type,
-                                        sdp: e.sdp
-                                    }, e.type) {
-                                    case "offer":
-                                        this._updateSignalingState("have-remote-offer");
-                                        break;
-                                    case "answer":
-                                        this._updateSignalingState("stable");
-                                        break;
-                                    default:
-                                        throw new TypeError('unsupported type "' + e.type + '"')
-                                }
-                                return r.getTracks().length && (t.remoteStreams.push(r), window.setTimeout(function() {
-                                    var e = new Event("addstream");
-                                    e.stream = r, t.dispatchEvent(e), null !== t.onaddstream && window.setTimeout(function() {
-                                        t.onaddstream(e)
-                                    }, 0), a.forEach(function(n) {
-                                        var a = n[0],
-                                            i = n[1],
-                                            o = new Event("track");
-                                        o.track = a, o.receiver = i, o.streams = [r], t.dispatchEvent(e), null !== t.ontrack && window.setTimeout(function() {
-                                            t.ontrack(o)
-                                        }, 0)
-                                    })
-                                }, 0)), arguments.length > 1 && "function" == typeof arguments[1] && window.setTimeout(arguments[1], 0), Promise.resolve()
-                            }, window.RTCPeerConnection.prototype.close = function() {
-                                this.transceivers.forEach(function(e) {
-                                    e.iceTransport && e.iceTransport.stop(), e.dtlsTransport && e.dtlsTransport.stop(), e.rtpSender && e.rtpSender.stop(), e.rtpReceiver && e.rtpReceiver.stop()
-                                }), this._updateSignalingState("closed")
-                            }, window.RTCPeerConnection.prototype._updateSignalingState = function(e) {
-                                this.signalingState = e;
-                                var t = new Event("signalingstatechange");
-                                this.dispatchEvent(t), null !== this.onsignalingstatechange && this.onsignalingstatechange(t)
-                            }, window.RTCPeerConnection.prototype._maybeFireNegotiationNeeded = function() {
-                                var e = new Event("negotiationneeded");
-                                this.dispatchEvent(e), null !== this.onnegotiationneeded && this.onnegotiationneeded(e)
-                            }, window.RTCPeerConnection.prototype._updateConnectionState = function() {
-                                var e, t = this,
-                                    n = {
-                                        "new": 0,
-                                        closed: 0,
-                                        connecting: 0,
-                                        checking: 0,
-                                        connected: 0,
-                                        completed: 0,
-                                        failed: 0
-                                    };
-                                if (this.transceivers.forEach(function(e) {
-                                        n[e.iceTransport.state]++, n[e.dtlsTransport.state]++
-                                    }), n.connected += n.completed, e = "new", n.failed > 0 ? e = "failed" : n.connecting > 0 || n.checking > 0 ? e = "connecting" : n.disconnected > 0 ? e = "disconnected" : n["new"] > 0 ? e = "new" : (n.connected > 0 || n.completed > 0) && (e = "connected"), e !== t.iceConnectionState) {
-                                    t.iceConnectionState = e;
-                                    var r = new Event("iceconnectionstatechange");
-                                    this.dispatchEvent(r), null !== this.oniceconnectionstatechange && this.oniceconnectionstatechange(r)
-                                }
-                            }, window.RTCPeerConnection.prototype.createOffer = function() {
-                                var e = this;
-                                if (this._pendingOffer) throw new Error("createOffer called while there is a pending offer.");
-                                var t;
-                                1 === arguments.length && "function" != typeof arguments[0] ? t = arguments[0] : 3 === arguments.length && (t = arguments[2]);
-                                var r = [],
-                                    a = 0,
-                                    i = 0;
-                                if (this.localStreams.length && (a = this.localStreams[0].getAudioTracks().length, i = this.localStreams[0].getVideoTracks().length), t) {
-                                    if (t.mandatory || t.optional) throw new TypeError("Legacy mandatory/optional constraints not supported.");
-                                    t.offerToReceiveAudio !== undefined && (a = t.offerToReceiveAudio), t.offerToReceiveVideo !== undefined && (i = t.offerToReceiveVideo)
-                                }
-                                for (this.localStreams.length && this.localStreams[0].getTracks().forEach(function(e) {
-                                        r.push({
-                                            kind: e.kind,
-                                            track: e,
-                                            wantReceive: "audio" === e.kind ? a > 0 : i > 0
-                                        }), "audio" === e.kind ? a-- : "video" === e.kind && i--
-                                    }); a > 0 || i > 0;) a > 0 && (r.push({
-                                    kind: "audio",
-                                    wantReceive: !0
-                                }), a--), i > 0 && (r.push({
-                                    kind: "video",
-                                    wantReceive: !0
-                                }), i--);
-                                var o = n.writeSessionBoilerplate(),
-                                    s = [];
-                                r.forEach(function(t, r) {
-                                    var a = t.track,
-                                        i = t.kind,
-                                        o = n.generateIdentifier(),
-                                        c = e.usingBundle && r > 0 ? {
-                                            iceGatherer: s[0].iceGatherer,
-                                            iceTransport: s[0].iceTransport,
-                                            dtlsTransport: s[0].dtlsTransport
-                                        } : e._createIceAndDtlsTransports(o, r),
-                                        l = RTCRtpSender.getCapabilities(i);
-                                    l.codecs = l.codecs.filter(function(e) {
-                                        return "rtx" !== e.name
-                                    }), l.codecs.forEach(function(e) {
-                                        "H264" === e.name && e.parameters["level-asymmetry-allowed"] === undefined && (e.parameters["level-asymmetry-allowed"] = "1")
+                                    }), this.usingBundle && (o += "a=group:BUNDLE " + s.map(function(e) {
+                                        return e.mid
+                                    }).join(" ") + "\r\n"), r.forEach(function(t, r) {
+                                        var a = s[r];
+                                        o += n.writeMediaSection(a, a.localCapabilities, "offer", e.localStreams[0])
+                                    }), this._pendingOffer = s;
+                                    var c = new RTCSessionDescription({
+                                        type: "offer",
+                                        sdp: o
                                     });
-                                    var u, d, p = [{
-                                        ssrc: 1001 * (2 * r + 1)
-                                    }];
-                                    a && (u = new RTCRtpSender(a, c.dtlsTransport)), t.wantReceive && (d = new RTCRtpReceiver(c.dtlsTransport, i)), s[r] = {
-                                        iceGatherer: c.iceGatherer,
-                                        iceTransport: c.iceTransport,
-                                        dtlsTransport: c.dtlsTransport,
-                                        localCapabilities: l,
-                                        remoteCapabilities: null,
-                                        rtpSender: u,
-                                        rtpReceiver: d,
-                                        kind: i,
-                                        mid: o,
-                                        sendEncodingParameters: p,
-                                        recvEncodingParameters: null
-                                    }
-                                }), this.usingBundle && (o += "a=group:BUNDLE " + s.map(function(e) {
-                                    return e.mid
-                                }).join(" ") + "\r\n"), r.forEach(function(t, r) {
-                                    var a = s[r];
-                                    o += n.writeMediaSection(a, a.localCapabilities, "offer", e.localStreams[0])
-                                }), this._pendingOffer = s;
-                                var c = new RTCSessionDescription({
-                                    type: "offer",
-                                    sdp: o
-                                });
-                                return arguments.length && "function" == typeof arguments[0] && window.setTimeout(arguments[0], 0, c), Promise.resolve(c)
-                            }, window.RTCPeerConnection.prototype.createAnswer = function() {
-                                var e = this,
-                                    t = n.writeSessionBoilerplate();
-                                this.usingBundle && (t += "a=group:BUNDLE " + this.transceivers.map(function(e) {
-                                    return e.mid
-                                }).join(" ") + "\r\n"), this.transceivers.forEach(function(r) {
-                                    if (r.isDatachannel) return void(t += "m=application 0 DTLS/SCTP 5000\r\nc=IN IP4 0.0.0.0\r\na=mid:" + r.mid + "\r\n");
-                                    var a = e._getCommonCapabilities(r.localCapabilities, r.remoteCapabilities);
-                                    t += n.writeMediaSection(r, a, "answer", e.localStreams[0])
-                                });
-                                var r = new RTCSessionDescription({
-                                    type: "answer",
-                                    sdp: t
-                                });
-                                return arguments.length && "function" == typeof arguments[0] && window.setTimeout(arguments[0], 0, r), Promise.resolve(r)
-                            }, window.RTCPeerConnection.prototype.addIceCandidate = function(e) {
-                                if (e) {
-                                    var t = e.sdpMLineIndex;
-                                    if (e.sdpMid)
-                                        for (var r = 0; r < this.transceivers.length; r++)
-                                            if (this.transceivers[r].mid === e.sdpMid) {
-                                                t = r;
-                                                break
-                                            } var a = this.transceivers[t];
-                                    if (a) {
-                                        var i = Object.keys(e.candidate).length > 0 ? n.parseCandidate(e.candidate) : {};
-                                        if ("tcp" === i.protocol && (0 === i.port || 9 === i.port)) return;
-                                        if ("1" !== i.component) return;
-                                        "endOfCandidates" === i.type && (i = {}), a.iceTransport.addRemoteCandidate(i);
-                                        var o = n.splitSections(this.remoteDescription.sdp);
-                                        o[t + 1] += (i.type ? e.candidate.trim() : "a=end-of-candidates") + "\r\n", this.remoteDescription.sdp = o.join("")
-                                    }
-                                } else this.transceivers.forEach(function(e) {
-                                    e.iceTransport.addRemoteCandidate({})
-                                });
-                                return arguments.length > 1 && "function" == typeof arguments[1] && window.setTimeout(arguments[1], 0), Promise.resolve()
-                            }, window.RTCPeerConnection.prototype.getStats = function() {
-                                var e = [];
-                                this.transceivers.forEach(function(t) {
-                                    ["rtpSender", "rtpReceiver", "iceGatherer", "iceTransport", "dtlsTransport"].forEach(function(n) {
-                                        t[n] && e.push(t[n].getStats())
+                                    return arguments.length && "function" == typeof arguments[0] && window.setTimeout(arguments[0], 0, c), Promise.resolve(c)
+                                }, window.RTCPeerConnection.prototype.createAnswer = function() {
+                                    var e = this,
+                                        t = n.writeSessionBoilerplate();
+                                    this.usingBundle && (t += "a=group:BUNDLE " + this.transceivers.map(function(e) {
+                                        return e.mid
+                                    }).join(" ") + "\r\n"), this.transceivers.forEach(function(r) {
+                                        if (r.isDatachannel) return void(t += "m=application 0 DTLS/SCTP 5000\r\nc=IN IP4 0.0.0.0\r\na=mid:" + r.mid + "\r\n");
+                                        var a = e._getCommonCapabilities(r.localCapabilities, r.remoteCapabilities);
+                                        t += n.writeMediaSection(r, a, "answer", e.localStreams[0])
+                                    });
+                                    var r = new RTCSessionDescription({
+                                        type: "answer",
+                                        sdp: t
+                                    });
+                                    return arguments.length && "function" == typeof arguments[0] && window.setTimeout(arguments[0], 0, r), Promise.resolve(r)
+                                }, window.RTCPeerConnection.prototype.addIceCandidate = function(e) {
+                                    if (e) {
+                                        var t = e.sdpMLineIndex;
+                                        if (e.sdpMid)
+                                            for (var r = 0; r < this.transceivers.length; r++)
+                                                if (this.transceivers[r].mid === e.sdpMid) {
+                                                    t = r;
+                                                    break
+                                                } var a = this.transceivers[t];
+                                        if (a) {
+                                            var i = Object.keys(e.candidate).length > 0 ? n.parseCandidate(e.candidate) : {};
+                                            if ("tcp" === i.protocol && (0 === i.port || 9 === i.port)) return;
+                                            if ("1" !== i.component) return;
+                                            "endOfCandidates" === i.type && (i = {}), a.iceTransport.addRemoteCandidate(i);
+                                            var o = n.splitSections(this.remoteDescription.sdp);
+                                            o[t + 1] += (i.type ? e.candidate.trim() : "a=end-of-candidates") + "\r\n", this.remoteDescription.sdp = o.join("")
+                                        }
+                                    } else this.transceivers.forEach(function(e) {
+                                        e.iceTransport.addRemoteCandidate({})
+                                    });
+                                    return arguments.length > 1 && "function" == typeof arguments[1] && window.setTimeout(arguments[1], 0), Promise.resolve()
+                                }, window.RTCPeerConnection.prototype.getStats = function() {
+                                    var e = [];
+                                    this.transceivers.forEach(function(t) {
+                                        ["rtpSender", "rtpReceiver", "iceGatherer", "iceTransport", "dtlsTransport"].forEach(function(n) {
+                                            t[n] && e.push(t[n].getStats())
+                                        })
+                                    });
+                                    var t = arguments.length > 1 && "function" == typeof arguments[1] && arguments[1];
+                                    return new Promise(function(n) {
+                                        var r = new Map;
+                                        Promise.all(e).then(function(e) {
+                                            e.forEach(function(e) {
+                                                Object.keys(e).forEach(function(t) {
+                                                    r.set(t, e[t]), r[t] = e[t]
+                                                })
+                                            }), t && window.setTimeout(t, 0, r), n(r)
+                                        })
                                     })
-                                });
-                                var t = arguments.length > 1 && "function" == typeof arguments[1] && arguments[1];
-                                return new Promise(function(n) {
-                                    var r = new Map;
-                                    Promise.all(e).then(function(e) {
-                                        e.forEach(function(e) {
-                                            Object.keys(e).forEach(function(t) {
-                                                r.set(t, e[t]), r[t] = e[t]
-                                            })
-                                        }), t && window.setTimeout(t, 0, r), n(r)
-                                    })
-                                })
-                            }
+                                }
                         }
                     };
                 t.exports = {
@@ -24632,10 +25361,9 @@ window.addEventListener("load", function() {
                                     }
                                 }), t.length && (e.require = t), e
                             };
-                            return t = JSON.parse(JSON.stringify(t)), r.version < 38 && (n("spec: " + JSON.stringify(t)), t.audio && (t.audio = o(t.audio)), t.video && (t.video = o(t.video)), n("ff37: " + JSON.stringify(t))),
-                                navigator.mozGetUserMedia(t, a, function(t) {
-                                    i(e(t))
-                                })
+                            return t = JSON.parse(JSON.stringify(t)), r.version < 38 && (n("spec: " + JSON.stringify(t)), t.audio && (t.audio = o(t.audio)), t.video && (t.video = o(t.video)), n("ff37: " + JSON.stringify(t))), navigator.mozGetUserMedia(t, a, function(t) {
+                                i(e(t))
+                            })
                         },
                         a = function(e) {
                             return new Promise(function(n, r) {
@@ -26949,12 +27677,12 @@ window.addEventListener("load", function() {
                         return _e(e) ? xt(e) : {}
                     }
 
-                    function H(e, t, n) {
+                    function q(e, t, n) {
                         var r = t(e);
                         return Vt(e) ? r : o(r, n(e))
                     }
 
-                    function q(e) {
+                    function H(e) {
                         return Et.call(e)
                     }
 
@@ -26999,7 +27727,7 @@ window.addEventListener("load", function() {
                     }
 
                     function ee(e) {
-                        return Ht ? Object(Ht.call(e)) : {}
+                        return qt ? Object(qt.call(e)) : {}
                     }
 
                     function te(e, t) {
@@ -27025,11 +27753,11 @@ window.addEventListener("load", function() {
                     }
 
                     function ae(e, t) {
-                        return re(e, qt(e), t)
+                        return re(e, Ht(e), t)
                     }
 
                     function ie(e) {
-                        return H(e, Ce, qt)
+                        return q(e, Ce, Ht)
                     }
 
                     function oe(e, t) {
@@ -27055,7 +27783,7 @@ window.addEventListener("load", function() {
                     function ue(e, t, n, r) {
                         var a = e.constructor;
                         switch (t) {
-                            case qe:
+                            case He:
                                 return Y(e);
                             case je:
                             case Me:
@@ -27181,8 +27909,8 @@ window.addEventListener("load", function() {
                         $e = "[object Set]",
                         Ge = "[object String]",
                         ze = "[object Symbol]",
-                        He = "[object WeakMap]",
-                        qe = "[object ArrayBuffer]",
+                        qe = "[object WeakMap]",
+                        He = "[object ArrayBuffer]",
                         We = "[object DataView]",
                         Ve = "[object Float32Array]",
                         Je = "[object Float64Array]",
@@ -27198,7 +27926,7 @@ window.addEventListener("load", function() {
                         at = /^\[object .+?Constructor\]$/,
                         it = /^(?:0|[1-9]\d*)$/,
                         ot = {};
-                    ot[Pe] = ot["[object Array]"] = ot[qe] = ot[We] = ot[je] = ot[Me] = ot[Ve] = ot[Je] = ot[Ye] = ot[Xe] = ot[Ke] = ot[Ie] = ot[Be] = ot[Le] = ot[Fe] = ot[$e] = ot[Ge] = ot[ze] = ot[Qe] = ot[Ze] = ot[et] = ot[tt] = !0, ot["[object Error]"] = ot[De] = ot[He] = !1;
+                    ot[Pe] = ot["[object Array]"] = ot[He] = ot[We] = ot[je] = ot[Me] = ot[Ve] = ot[Je] = ot[Ye] = ot[Xe] = ot[Ke] = ot[Ie] = ot[Be] = ot[Le] = ot[Fe] = ot[$e] = ot[Ge] = ot[ze] = ot[Qe] = ot[Ze] = ot[et] = ot[tt] = !0, ot["[object Error]"] = ot[De] = ot[qe] = !1;
                     var st = "object" == typeof e && e && e.Object === Object && e,
                         ct = "object" == typeof self && self && self.Object === Object && self,
                         lt = st || ct || Function("return this")(),
@@ -27239,11 +27967,11 @@ window.addEventListener("load", function() {
                         $t = he(At),
                         Gt = he(It),
                         zt = _t ? _t.prototype : undefined,
-                        Ht = zt ? zt.valueOf : undefined;
+                        qt = zt ? zt.valueOf : undefined;
                     m.prototype.clear = h, m.prototype["delete"] = y, m.prototype.get = v, m.prototype.has = g, m.prototype.set = b, E.prototype.clear = w, E.prototype["delete"] = R, E.prototype.get = _, E.prototype.has = k, E.prototype.set = C, x.prototype.clear = O, x.prototype["delete"] = S, x.prototype.get = T, x.prototype.has = N, x.prototype.set = P, j.prototype.clear = M, j.prototype["delete"] = D, j.prototype.get = A, j.prototype.has = I, j.prototype.set = B;
-                    var qt = Tt ? p(Tt, Object) : xe,
-                        Wt = q;
-                    (jt && Wt(new jt(new ArrayBuffer(1))) != We || Mt && Wt(new Mt) != Ie || Dt && Wt(Dt.resolve()) != Ue || At && Wt(new At) != $e || It && Wt(new It) != He) && (Wt = function(e) {
+                    var Ht = Tt ? p(Tt, Object) : xe,
+                        Wt = H;
+                    (jt && Wt(new jt(new ArrayBuffer(1))) != We || Mt && Wt(new Mt) != Ie || Dt && Wt(Dt.resolve()) != Ue || At && Wt(new At) != $e || It && Wt(new It) != qe) && (Wt = function(e) {
                         var t = Et.call(e),
                             n = t == Le ? e.constructor : undefined,
                             r = n ? he(n) : undefined;
@@ -27257,7 +27985,7 @@ window.addEventListener("load", function() {
                             case $t:
                                 return $e;
                             case Gt:
-                                return He
+                                return qe
                         }
                         return t
                     });
@@ -28360,256 +29088,255 @@ window.addEventListener("load", function() {
                 "use strict";
                 var n = {};
                 n.generateIdentifier = function() {
-                        return Math.random().toString(36).substr(2, 10)
-                    },
-                    n.localCName = n.generateIdentifier(), n.splitLines = function(e) {
-                        return e.trim().split("\n").map(function(e) {
-                            return e.trim()
-                        })
-                    }, n.splitSections = function(e) {
-                        return e.split("\nm=").map(function(e, t) {
-                            return (t > 0 ? "m=" + e : e).trim() + "\r\n"
-                        })
-                    }, n.matchPrefix = function(e, t) {
-                        return n.splitLines(e).filter(function(e) {
-                            return 0 === e.indexOf(t)
-                        })
-                    }, n.parseCandidate = function(e) {
-                        var t;
-                        t = 0 === e.indexOf("a=candidate:") ? e.substring(12).split(" ") : e.substring(10).split(" ");
-                        for (var n = {
-                                foundation: t[0],
-                                component: t[1],
-                                protocol: t[2].toLowerCase(),
-                                priority: parseInt(t[3], 10),
-                                ip: t[4],
-                                port: parseInt(t[5], 10),
-                                type: t[7]
-                            }, r = 8; r < t.length; r += 2) switch (t[r]) {
-                            case "raddr":
-                                n.relatedAddress = t[r + 1];
-                                break;
-                            case "rport":
-                                n.relatedPort = parseInt(t[r + 1], 10);
-                                break;
-                            case "tcptype":
-                                n.tcpType = t[r + 1];
-                                break;
-                            default:
-                                n[t[r]] = t[r + 1]
-                        }
-                        return n
-                    }, n.writeCandidate = function(e) {
-                        var t = [];
-                        t.push(e.foundation), t.push(e.component), t.push(e.protocol.toUpperCase()), t.push(e.priority), t.push(e.ip), t.push(e.port);
-                        var n = e.type;
-                        return t.push("typ"), t.push(n), "host" !== n && e.relatedAddress && e.relatedPort && (t.push("raddr"), t.push(e.relatedAddress), t.push("rport"), t.push(e.relatedPort)), e.tcpType && "tcp" === e.protocol.toLowerCase() && (t.push("tcptype"), t.push(e.tcpType)), "candidate:" + t.join(" ")
-                    }, n.parseIceOptions = function(e) {
-                        return e.substr(14).split(" ")
-                    }, n.parseRtpMap = function(e) {
-                        var t = e.substr(9).split(" "),
-                            n = {
-                                payloadType: parseInt(t.shift(), 10)
-                            };
-                        return t = t[0].split("/"), n.name = t[0], n.clockRate = parseInt(t[1], 10), n.numChannels = 3 === t.length ? parseInt(t[2], 10) : 1, n
-                    }, n.writeRtpMap = function(e) {
-                        var t = e.payloadType;
-                        return e.preferredPayloadType !== undefined && (t = e.preferredPayloadType), "a=rtpmap:" + t + " " + e.name + "/" + e.clockRate + (1 !== e.numChannels ? "/" + e.numChannels : "") + "\r\n"
-                    }, n.parseExtmap = function(e) {
-                        var t = e.substr(9).split(" ");
-                        return {
-                            id: parseInt(t[0], 10),
-                            direction: t[0].indexOf("/") > 0 ? t[0].split("/")[1] : "sendrecv",
-                            uri: t[1]
-                        }
-                    }, n.writeExtmap = function(e) {
-                        return "a=extmap:" + (e.id || e.preferredId) + (e.direction && "sendrecv" !== e.direction ? "/" + e.direction : "") + " " + e.uri + "\r\n"
-                    }, n.parseFmtp = function(e) {
-                        for (var t, n = {}, r = e.substr(e.indexOf(" ") + 1).split(";"), a = 0; a < r.length; a++) t = r[a].trim().split("="), n[t[0].trim()] = t[1];
-                        return n
-                    }, n.writeFmtp = function(e) {
-                        var t = "",
-                            n = e.payloadType;
-                        if (e.preferredPayloadType !== undefined && (n = e.preferredPayloadType), e.parameters && Object.keys(e.parameters).length) {
-                            var r = [];
-                            Object.keys(e.parameters).forEach(function(t) {
-                                r.push(t + "=" + e.parameters[t])
-                            }), t += "a=fmtp:" + n + " " + r.join(";") + "\r\n"
-                        }
-                        return t
-                    }, n.parseRtcpFb = function(e) {
-                        var t = e.substr(e.indexOf(" ") + 1).split(" ");
-                        return {
-                            type: t.shift(),
-                            parameter: t.join(" ")
-                        }
-                    }, n.writeRtcpFb = function(e) {
-                        var t = "",
-                            n = e.payloadType;
-                        return e.preferredPayloadType !== undefined && (n = e.preferredPayloadType), e.rtcpFeedback && e.rtcpFeedback.length && e.rtcpFeedback.forEach(function(e) {
-                            t += "a=rtcp-fb:" + n + " " + e.type + (e.parameter && e.parameter.length ? " " + e.parameter : "") + "\r\n"
-                        }), t
-                    }, n.parseSsrcMedia = function(e) {
-                        var t = e.indexOf(" "),
-                            n = {
-                                ssrc: parseInt(e.substr(7, t - 7), 10)
-                            },
-                            r = e.indexOf(":", t);
-                        return r > -1 ? (n.attribute = e.substr(t + 1, r - t - 1), n.value = e.substr(r + 1)) : n.attribute = e.substr(t + 1), n
-                    }, n.getMid = function(e) {
-                        var t = n.matchPrefix(e, "a=mid:")[0];
-                        if (t) return t.substr(6)
-                    }, n.parseFingerprint = function(e) {
-                        var t = e.substr(14).split(" ");
-                        return {
-                            algorithm: t[0].toLowerCase(),
-                            value: t[1]
-                        }
-                    }, n.getDtlsParameters = function(e, t) {
-                        return {
-                            role: "auto",
-                            fingerprints: n.matchPrefix(e + t, "a=fingerprint:").map(n.parseFingerprint)
-                        }
-                    }, n.writeDtlsParameters = function(e, t) {
-                        var n = "a=setup:" + t + "\r\n";
-                        return e.fingerprints.forEach(function(e) {
-                            n += "a=fingerprint:" + e.algorithm + " " + e.value + "\r\n"
-                        }), n
-                    }, n.getIceParameters = function(e, t) {
-                        var r = n.splitLines(e);
-                        return r = r.concat(n.splitLines(t)), {
-                            usernameFragment: r.filter(function(e) {
-                                return 0 === e.indexOf("a=ice-ufrag:")
-                            })[0].substr(12),
-                            password: r.filter(function(e) {
-                                return 0 === e.indexOf("a=ice-pwd:")
-                            })[0].substr(10)
-                        }
-                    }, n.writeIceParameters = function(e) {
-                        return "a=ice-ufrag:" + e.usernameFragment + "\r\na=ice-pwd:" + e.password + "\r\n"
-                    }, n.parseRtpParameters = function(e) {
-                        for (var t = {
-                                codecs: [],
-                                headerExtensions: [],
-                                fecMechanisms: [],
-                                rtcp: []
-                            }, r = n.splitLines(e), a = r[0].split(" "), i = 3; i < a.length; i++) {
-                            var o = a[i],
-                                s = n.matchPrefix(e, "a=rtpmap:" + o + " ")[0];
-                            if (s) {
-                                var c = n.parseRtpMap(s),
-                                    l = n.matchPrefix(e, "a=fmtp:" + o + " ");
-                                switch (c.parameters = l.length ? n.parseFmtp(l[0]) : {}, c.rtcpFeedback = n.matchPrefix(e, "a=rtcp-fb:" + o + " ").map(n.parseRtcpFb), t.codecs.push(c), c.name.toUpperCase()) {
-                                    case "RED":
-                                    case "ULPFEC":
-                                        t.fecMechanisms.push(c.name.toUpperCase())
-                                }
-                            }
-                        }
-                        return n.matchPrefix(e, "a=extmap:").forEach(function(e) {
-                            t.headerExtensions.push(n.parseExtmap(e))
-                        }), t
-                    }, n.writeRtpDescription = function(e, t) {
-                        var r = "";
-                        r += "m=" + e + " ", r += t.codecs.length > 0 ? "9" : "0", r += " UDP/TLS/RTP/SAVPF ", r += t.codecs.map(function(e) {
-                            return e.preferredPayloadType !== undefined ? e.preferredPayloadType : e.payloadType
-                        }).join(" ") + "\r\n", r += "c=IN IP4 0.0.0.0\r\n", r += "a=rtcp:9 IN IP4 0.0.0.0\r\n", t.codecs.forEach(function(e) {
-                            r += n.writeRtpMap(e), r += n.writeFmtp(e), r += n.writeRtcpFb(e)
-                        });
-                        var a = 0;
-                        return t.codecs.forEach(function(e) {
-                            e.maxptime > a && (a = e.maxptime)
-                        }), a > 0 && (r += "a=maxptime:" + a + "\r\n"), r += "a=rtcp-mux\r\n", t.headerExtensions.forEach(function(e) {
-                            r += n.writeExtmap(e)
-                        }), r
-                    }, n.parseRtpEncodingParameters = function(e) {
-                        var t, r = [],
-                            a = n.parseRtpParameters(e),
-                            i = -1 !== a.fecMechanisms.indexOf("RED"),
-                            o = -1 !== a.fecMechanisms.indexOf("ULPFEC"),
-                            s = n.matchPrefix(e, "a=ssrc:").map(function(e) {
-                                return n.parseSsrcMedia(e)
-                            }).filter(function(e) {
-                                return "cname" === e.attribute
-                            }),
-                            c = s.length > 0 && s[0].ssrc,
-                            l = n.matchPrefix(e, "a=ssrc-group:FID").map(function(e) {
-                                var t = e.split(" ");
-                                return t.shift(), t.map(function(e) {
-                                    return parseInt(e, 10)
-                                })
-                            });
-                        l.length > 0 && l[0].length > 1 && l[0][0] === c && (t = l[0][1]), a.codecs.forEach(function(e) {
-                            if ("RTX" === e.name.toUpperCase() && e.parameters.apt) {
-                                var n = {
-                                    ssrc: c,
-                                    codecPayloadType: parseInt(e.parameters.apt, 10),
-                                    rtx: {
-                                        ssrc: t
-                                    }
-                                };
-                                r.push(n), i && (n = JSON.parse(JSON.stringify(n)), n.fec = {
-                                    ssrc: t,
-                                    mechanism: o ? "red+ulpfec" : "red"
-                                }, r.push(n))
-                            }
-                        }), 0 === r.length && c && r.push({
-                            ssrc: c
-                        });
-                        var u = n.matchPrefix(e, "b=");
-                        return u.length && (0 === u[0].indexOf("b=TIAS:") ? u = parseInt(u[0].substr(7), 10) : 0 === u[0].indexOf("b=AS:") && (u = parseInt(u[0].substr(5), 10)), r.forEach(function(e) {
-                            e.maxBitrate = u
-                        })), r
-                    }, n.parseRtcpParameters = function(e) {
-                        var t = {},
-                            r = n.matchPrefix(e, "a=ssrc:").map(function(e) {
-                                return n.parseSsrcMedia(e)
-                            }).filter(function(e) {
-                                return "cname" === e.attribute
-                            })[0];
-                        r && (t.cname = r.value, t.ssrc = r.ssrc);
-                        var a = n.matchPrefix(e, "a=rtcp-rsize");
-                        t.reducedSize = a.length > 0, t.compound = 0 === a.length;
-                        var i = n.matchPrefix(e, "a=rtcp-mux");
-                        return t.mux = i.length > 0, t
-                    }, n.parseMsid = function(e) {
-                        var t, r = n.matchPrefix(e, "a=msid:");
-                        if (1 === r.length) return t = r[0].substr(7).split(" "), {
-                            stream: t[0],
-                            track: t[1]
+                    return Math.random().toString(36).substr(2, 10)
+                }, n.localCName = n.generateIdentifier(), n.splitLines = function(e) {
+                    return e.trim().split("\n").map(function(e) {
+                        return e.trim()
+                    })
+                }, n.splitSections = function(e) {
+                    return e.split("\nm=").map(function(e, t) {
+                        return (t > 0 ? "m=" + e : e).trim() + "\r\n"
+                    })
+                }, n.matchPrefix = function(e, t) {
+                    return n.splitLines(e).filter(function(e) {
+                        return 0 === e.indexOf(t)
+                    })
+                }, n.parseCandidate = function(e) {
+                    var t;
+                    t = 0 === e.indexOf("a=candidate:") ? e.substring(12).split(" ") : e.substring(10).split(" ");
+                    for (var n = {
+                            foundation: t[0],
+                            component: t[1],
+                            protocol: t[2].toLowerCase(),
+                            priority: parseInt(t[3], 10),
+                            ip: t[4],
+                            port: parseInt(t[5], 10),
+                            type: t[7]
+                        }, r = 8; r < t.length; r += 2) switch (t[r]) {
+                        case "raddr":
+                            n.relatedAddress = t[r + 1];
+                            break;
+                        case "rport":
+                            n.relatedPort = parseInt(t[r + 1], 10);
+                            break;
+                        case "tcptype":
+                            n.tcpType = t[r + 1];
+                            break;
+                        default:
+                            n[t[r]] = t[r + 1]
+                    }
+                    return n
+                }, n.writeCandidate = function(e) {
+                    var t = [];
+                    t.push(e.foundation), t.push(e.component), t.push(e.protocol.toUpperCase()), t.push(e.priority), t.push(e.ip), t.push(e.port);
+                    var n = e.type;
+                    return t.push("typ"), t.push(n), "host" !== n && e.relatedAddress && e.relatedPort && (t.push("raddr"), t.push(e.relatedAddress), t.push("rport"), t.push(e.relatedPort)), e.tcpType && "tcp" === e.protocol.toLowerCase() && (t.push("tcptype"), t.push(e.tcpType)), "candidate:" + t.join(" ")
+                }, n.parseIceOptions = function(e) {
+                    return e.substr(14).split(" ")
+                }, n.parseRtpMap = function(e) {
+                    var t = e.substr(9).split(" "),
+                        n = {
+                            payloadType: parseInt(t.shift(), 10)
                         };
-                        var a = n.matchPrefix(e, "a=ssrc:").map(function(e) {
+                    return t = t[0].split("/"), n.name = t[0], n.clockRate = parseInt(t[1], 10), n.numChannels = 3 === t.length ? parseInt(t[2], 10) : 1, n
+                }, n.writeRtpMap = function(e) {
+                    var t = e.payloadType;
+                    return e.preferredPayloadType !== undefined && (t = e.preferredPayloadType), "a=rtpmap:" + t + " " + e.name + "/" + e.clockRate + (1 !== e.numChannels ? "/" + e.numChannels : "") + "\r\n"
+                }, n.parseExtmap = function(e) {
+                    var t = e.substr(9).split(" ");
+                    return {
+                        id: parseInt(t[0], 10),
+                        direction: t[0].indexOf("/") > 0 ? t[0].split("/")[1] : "sendrecv",
+                        uri: t[1]
+                    }
+                }, n.writeExtmap = function(e) {
+                    return "a=extmap:" + (e.id || e.preferredId) + (e.direction && "sendrecv" !== e.direction ? "/" + e.direction : "") + " " + e.uri + "\r\n"
+                }, n.parseFmtp = function(e) {
+                    for (var t, n = {}, r = e.substr(e.indexOf(" ") + 1).split(";"), a = 0; a < r.length; a++) t = r[a].trim().split("="), n[t[0].trim()] = t[1];
+                    return n
+                }, n.writeFmtp = function(e) {
+                    var t = "",
+                        n = e.payloadType;
+                    if (e.preferredPayloadType !== undefined && (n = e.preferredPayloadType), e.parameters && Object.keys(e.parameters).length) {
+                        var r = [];
+                        Object.keys(e.parameters).forEach(function(t) {
+                            r.push(t + "=" + e.parameters[t])
+                        }), t += "a=fmtp:" + n + " " + r.join(";") + "\r\n"
+                    }
+                    return t
+                }, n.parseRtcpFb = function(e) {
+                    var t = e.substr(e.indexOf(" ") + 1).split(" ");
+                    return {
+                        type: t.shift(),
+                        parameter: t.join(" ")
+                    }
+                }, n.writeRtcpFb = function(e) {
+                    var t = "",
+                        n = e.payloadType;
+                    return e.preferredPayloadType !== undefined && (n = e.preferredPayloadType), e.rtcpFeedback && e.rtcpFeedback.length && e.rtcpFeedback.forEach(function(e) {
+                        t += "a=rtcp-fb:" + n + " " + e.type + (e.parameter && e.parameter.length ? " " + e.parameter : "") + "\r\n"
+                    }), t
+                }, n.parseSsrcMedia = function(e) {
+                    var t = e.indexOf(" "),
+                        n = {
+                            ssrc: parseInt(e.substr(7, t - 7), 10)
+                        },
+                        r = e.indexOf(":", t);
+                    return r > -1 ? (n.attribute = e.substr(t + 1, r - t - 1), n.value = e.substr(r + 1)) : n.attribute = e.substr(t + 1), n
+                }, n.getMid = function(e) {
+                    var t = n.matchPrefix(e, "a=mid:")[0];
+                    if (t) return t.substr(6)
+                }, n.parseFingerprint = function(e) {
+                    var t = e.substr(14).split(" ");
+                    return {
+                        algorithm: t[0].toLowerCase(),
+                        value: t[1]
+                    }
+                }, n.getDtlsParameters = function(e, t) {
+                    return {
+                        role: "auto",
+                        fingerprints: n.matchPrefix(e + t, "a=fingerprint:").map(n.parseFingerprint)
+                    }
+                }, n.writeDtlsParameters = function(e, t) {
+                    var n = "a=setup:" + t + "\r\n";
+                    return e.fingerprints.forEach(function(e) {
+                        n += "a=fingerprint:" + e.algorithm + " " + e.value + "\r\n"
+                    }), n
+                }, n.getIceParameters = function(e, t) {
+                    var r = n.splitLines(e);
+                    return r = r.concat(n.splitLines(t)), {
+                        usernameFragment: r.filter(function(e) {
+                            return 0 === e.indexOf("a=ice-ufrag:")
+                        })[0].substr(12),
+                        password: r.filter(function(e) {
+                            return 0 === e.indexOf("a=ice-pwd:")
+                        })[0].substr(10)
+                    }
+                }, n.writeIceParameters = function(e) {
+                    return "a=ice-ufrag:" + e.usernameFragment + "\r\na=ice-pwd:" + e.password + "\r\n"
+                }, n.parseRtpParameters = function(e) {
+                    for (var t = {
+                            codecs: [],
+                            headerExtensions: [],
+                            fecMechanisms: [],
+                            rtcp: []
+                        }, r = n.splitLines(e), a = r[0].split(" "), i = 3; i < a.length; i++) {
+                        var o = a[i],
+                            s = n.matchPrefix(e, "a=rtpmap:" + o + " ")[0];
+                        if (s) {
+                            var c = n.parseRtpMap(s),
+                                l = n.matchPrefix(e, "a=fmtp:" + o + " ");
+                            switch (c.parameters = l.length ? n.parseFmtp(l[0]) : {}, c.rtcpFeedback = n.matchPrefix(e, "a=rtcp-fb:" + o + " ").map(n.parseRtcpFb), t.codecs.push(c), c.name.toUpperCase()) {
+                                case "RED":
+                                case "ULPFEC":
+                                    t.fecMechanisms.push(c.name.toUpperCase())
+                            }
+                        }
+                    }
+                    return n.matchPrefix(e, "a=extmap:").forEach(function(e) {
+                        t.headerExtensions.push(n.parseExtmap(e))
+                    }), t
+                }, n.writeRtpDescription = function(e, t) {
+                    var r = "";
+                    r += "m=" + e + " ", r += t.codecs.length > 0 ? "9" : "0", r += " UDP/TLS/RTP/SAVPF ", r += t.codecs.map(function(e) {
+                        return e.preferredPayloadType !== undefined ? e.preferredPayloadType : e.payloadType
+                    }).join(" ") + "\r\n", r += "c=IN IP4 0.0.0.0\r\n", r += "a=rtcp:9 IN IP4 0.0.0.0\r\n", t.codecs.forEach(function(e) {
+                        r += n.writeRtpMap(e), r += n.writeFmtp(e), r += n.writeRtcpFb(e)
+                    });
+                    var a = 0;
+                    return t.codecs.forEach(function(e) {
+                        e.maxptime > a && (a = e.maxptime)
+                    }), a > 0 && (r += "a=maxptime:" + a + "\r\n"), r += "a=rtcp-mux\r\n", t.headerExtensions.forEach(function(e) {
+                        r += n.writeExtmap(e)
+                    }), r
+                }, n.parseRtpEncodingParameters = function(e) {
+                    var t, r = [],
+                        a = n.parseRtpParameters(e),
+                        i = -1 !== a.fecMechanisms.indexOf("RED"),
+                        o = -1 !== a.fecMechanisms.indexOf("ULPFEC"),
+                        s = n.matchPrefix(e, "a=ssrc:").map(function(e) {
                             return n.parseSsrcMedia(e)
                         }).filter(function(e) {
-                            return "msid" === e.attribute
+                            return "cname" === e.attribute
+                        }),
+                        c = s.length > 0 && s[0].ssrc,
+                        l = n.matchPrefix(e, "a=ssrc-group:FID").map(function(e) {
+                            var t = e.split(" ");
+                            return t.shift(), t.map(function(e) {
+                                return parseInt(e, 10)
+                            })
                         });
-                        return a.length > 0 ? (t = a[0].value.split(" "), {
-                            stream: t[0],
-                            track: t[1]
-                        }) : void 0
-                    }, n.writeSessionBoilerplate = function() {
-                        return "v=0\r\no=thisisadapterortc 8169639915646943137 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\n"
-                    }, n.writeMediaSection = function(e, t, r, a) {
-                        var i = n.writeRtpDescription(e.kind, t);
-                        if (i += n.writeIceParameters(e.iceGatherer.getLocalParameters()), i += n.writeDtlsParameters(e.dtlsTransport.getLocalParameters(), "offer" === r ? "actpass" : "active"), i += "a=mid:" + e.mid + "\r\n", e.direction ? i += "a=" + e.direction + "\r\n" : e.rtpSender && e.rtpReceiver ? i += "a=sendrecv\r\n" : e.rtpSender ? i += "a=sendonly\r\n" : e.rtpReceiver ? i += "a=recvonly\r\n" : i += "a=inactive\r\n", e.rtpSender) {
-                            var o = "msid:" + a.id + " " + e.rtpSender.track.id + "\r\n";
-                            i += "a=" + o, i += "a=ssrc:" + e.sendEncodingParameters[0].ssrc + " " + o, e.sendEncodingParameters[0].rtx && (i += "a=ssrc:" + e.sendEncodingParameters[0].rtx.ssrc + " " + o, i += "a=ssrc-group:FID " + e.sendEncodingParameters[0].ssrc + " " + e.sendEncodingParameters[0].rtx.ssrc + "\r\n")
+                    l.length > 0 && l[0].length > 1 && l[0][0] === c && (t = l[0][1]), a.codecs.forEach(function(e) {
+                        if ("RTX" === e.name.toUpperCase() && e.parameters.apt) {
+                            var n = {
+                                ssrc: c,
+                                codecPayloadType: parseInt(e.parameters.apt, 10),
+                                rtx: {
+                                    ssrc: t
+                                }
+                            };
+                            r.push(n), i && (n = JSON.parse(JSON.stringify(n)), n.fec = {
+                                ssrc: t,
+                                mechanism: o ? "red+ulpfec" : "red"
+                            }, r.push(n))
                         }
-                        return i += "a=ssrc:" + e.sendEncodingParameters[0].ssrc + " cname:" + n.localCName + "\r\n", e.rtpSender && e.sendEncodingParameters[0].rtx && (i += "a=ssrc:" + e.sendEncodingParameters[0].rtx.ssrc + " cname:" + n.localCName + "\r\n"), i
-                    }, n.getDirection = function(e, t) {
-                        for (var r = n.splitLines(e), a = 0; a < r.length; a++) switch (r[a]) {
-                            case "a=sendrecv":
-                            case "a=sendonly":
-                            case "a=recvonly":
-                            case "a=inactive":
-                                return r[a].substr(2)
-                        }
-                        return t ? n.getDirection(t) : "sendrecv"
-                    }, n.getKind = function(e) {
-                        return n.splitLines(e)[0].split(" ")[0].substr(2)
-                    }, n.isRejected = function(e) {
-                        return "0" === e.split(" ", 2)[1]
-                    }, t.exports = n
+                    }), 0 === r.length && c && r.push({
+                        ssrc: c
+                    });
+                    var u = n.matchPrefix(e, "b=");
+                    return u.length && (0 === u[0].indexOf("b=TIAS:") ? u = parseInt(u[0].substr(7), 10) : 0 === u[0].indexOf("b=AS:") && (u = parseInt(u[0].substr(5), 10)), r.forEach(function(e) {
+                        e.maxBitrate = u
+                    })), r
+                }, n.parseRtcpParameters = function(e) {
+                    var t = {},
+                        r = n.matchPrefix(e, "a=ssrc:").map(function(e) {
+                            return n.parseSsrcMedia(e)
+                        }).filter(function(e) {
+                            return "cname" === e.attribute
+                        })[0];
+                    r && (t.cname = r.value, t.ssrc = r.ssrc);
+                    var a = n.matchPrefix(e, "a=rtcp-rsize");
+                    t.reducedSize = a.length > 0, t.compound = 0 === a.length;
+                    var i = n.matchPrefix(e, "a=rtcp-mux");
+                    return t.mux = i.length > 0, t
+                }, n.parseMsid = function(e) {
+                    var t, r = n.matchPrefix(e, "a=msid:");
+                    if (1 === r.length) return t = r[0].substr(7).split(" "), {
+                        stream: t[0],
+                        track: t[1]
+                    };
+                    var a = n.matchPrefix(e, "a=ssrc:").map(function(e) {
+                        return n.parseSsrcMedia(e)
+                    }).filter(function(e) {
+                        return "msid" === e.attribute
+                    });
+                    return a.length > 0 ? (t = a[0].value.split(" "), {
+                        stream: t[0],
+                        track: t[1]
+                    }) : void 0
+                }, n.writeSessionBoilerplate = function() {
+                    return "v=0\r\no=thisisadapterortc 8169639915646943137 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\n"
+                }, n.writeMediaSection = function(e, t, r, a) {
+                    var i = n.writeRtpDescription(e.kind, t);
+                    if (i += n.writeIceParameters(e.iceGatherer.getLocalParameters()), i += n.writeDtlsParameters(e.dtlsTransport.getLocalParameters(), "offer" === r ? "actpass" : "active"), i += "a=mid:" + e.mid + "\r\n", e.direction ? i += "a=" + e.direction + "\r\n" : e.rtpSender && e.rtpReceiver ? i += "a=sendrecv\r\n" : e.rtpSender ? i += "a=sendonly\r\n" : e.rtpReceiver ? i += "a=recvonly\r\n" : i += "a=inactive\r\n", e.rtpSender) {
+                        var o = "msid:" + a.id + " " + e.rtpSender.track.id + "\r\n";
+                        i += "a=" + o, i += "a=ssrc:" + e.sendEncodingParameters[0].ssrc + " " + o, e.sendEncodingParameters[0].rtx && (i += "a=ssrc:" + e.sendEncodingParameters[0].rtx.ssrc + " " + o, i += "a=ssrc-group:FID " + e.sendEncodingParameters[0].ssrc + " " + e.sendEncodingParameters[0].rtx.ssrc + "\r\n")
+                    }
+                    return i += "a=ssrc:" + e.sendEncodingParameters[0].ssrc + " cname:" + n.localCName + "\r\n", e.rtpSender && e.sendEncodingParameters[0].rtx && (i += "a=ssrc:" + e.sendEncodingParameters[0].rtx.ssrc + " cname:" + n.localCName + "\r\n"), i
+                }, n.getDirection = function(e, t) {
+                    for (var r = n.splitLines(e), a = 0; a < r.length; a++) switch (r[a]) {
+                        case "a=sendrecv":
+                        case "a=sendonly":
+                        case "a=recvonly":
+                        case "a=inactive":
+                            return r[a].substr(2)
+                    }
+                    return t ? n.getDirection(t) : "sendrecv"
+                }, n.getKind = function(e) {
+                    return n.splitLines(e)[0].split(" ")[0].substr(2)
+                }, n.isRejected = function(e) {
+                    return "0" === e.split(" ", 2)[1]
+                }, t.exports = n
             }, {}],
             60: [function(e, t) {
                 t.exports = e("./lib/")
