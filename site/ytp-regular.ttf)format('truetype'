@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/cNK23m_uEr2DG6pDNvXjPPniJN0.js"></script><link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+<title>The page you were looking for doesn't exist (404)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    body {
+      background-color: #232529;
+      text-transform: uppercase;
+      color: #a4acbd;
+      text-align: center;
+      font-family: Roboto, Open Sans, Helvetica, Arial;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .ui-button-match-mega {
+      text-align: center;
+      padding: 12px;
+      border-radius: 3px;
+      margin: 5px 5px 0px 0px;
+      font-size: 13px;
+      background: #3e73dd;
+      color: #e1ebff;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div style="overflow: auto; height: 100%; padding-bottom: 100px; max-width: 600px; margin-top: 15%; width: 80%; left: 0; right: 0; margin-left: auto; margin-right: auto; text-align: center;">
+<img src="images/emeraldflat.png" style="margin-top: 7px; margin-left: 1px; height: auto;">
+<br>
+<br>
+Error 404
+<br>
+<br>
+<a class="ui-button-match-mega" href="/">
+Back
+</a>
+</div>
+
+</body>
+</html>
