@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import { URL } from "url";
 import scrape from "website-scraper";
 
-const SITE = new URL("https://em-preprod.herokuapp.com/app");
+const SITE = new URL("https://emeraldchat.com/app");
 
 const USER_AGENT =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4472.114 Safari/537.36";
