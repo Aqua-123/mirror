@@ -1405,22 +1405,6 @@ function _inherits(e, t) {
         }
     }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
-
-function _classCallCheck(e, t) {
-    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-}
-
-function _inherits(e, t) {
-    if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-    e.prototype = Object.create(t && t.prototype, {
-        constructor: {
-            value: e,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
-        }
-    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-}
 var App = {};
 ! function(e, t) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = e.document ? t(e, !0) : function(e) {
@@ -2442,75 +2426,75 @@ var App = {};
         }, P = t.setDocument = function(e) {
             var t, n, r = e ? e.ownerDocument || e : F;
             return r !== j && 9 === r.nodeType && r.documentElement ? (j = r, M = j.documentElement, D = !k(j), (n = j.defaultView) && n.top !== n && (n.addEventListener ? n.addEventListener("unload", Re, !1) : n.attachEvent && n.attachEvent("onunload", Re)), w.attributes = a(function(e) {
-                return e.className = "i", !e.getAttribute("className")
-            }), w.getElementsByTagName = a(function(e) {
-                return e.appendChild(j.createComment("")), !e.getElementsByTagName("*").length
-            }), w.getElementsByClassName = ye.test(j.getElementsByClassName), w.getById = a(function(e) {
-                return M.appendChild(e).id = U, !j.getElementsByName || !j.getElementsByName(U).length
-            }), w.getById ? (R.find.ID = function(e, t) {
-                if ("undefined" != typeof t.getElementById && D) {
-                    var n = t.getElementById(e);
-                    return n ? [n] : []
-                }
-            }, R.filter.ID = function(e) {
-                var t = e.replace(Ee, we);
-                return function(e) {
-                    return e.getAttribute("id") === t
-                }
-            }) : (delete R.find.ID, R.filter.ID = function(e) {
-                var t = e.replace(Ee, we);
-                return function(e) {
-                    var n = "undefined" != typeof e.getAttributeNode && e.getAttributeNode("id");
-                    return n && n.value === t
-                }
-            }), R.find.TAG = w.getElementsByTagName ? function(e, t) {
-                return "undefined" != typeof t.getElementsByTagName ? t.getElementsByTagName(e) : w.qsa ? t.querySelectorAll(e) : void 0
-            } : function(e, t) {
-                var n, r = [],
-                    a = 0,
-                    i = t.getElementsByTagName(e);
-                if ("*" === e) {
-                    for (; n = i[a++];) 1 === n.nodeType && r.push(n);
-                    return r
-                }
-                return i
-            }, R.find.CLASS = w.getElementsByClassName && function(e, t) {
-                if ("undefined" != typeof t.getElementsByClassName && D) return t.getElementsByClassName(e)
-            }, I = [], A = [], (w.qsa = ye.test(j.querySelectorAll)) && (a(function(e) {
-                M.appendChild(e).innerHTML = "<a id='" + U + "'></a><select id='" + U + "-\r\\' msallowcapture=''><option selected=''></option></select>", e.querySelectorAll("[msallowcapture^='']").length && A.push("[*^$]=" + ne + "*(?:''|\"\")"), e.querySelectorAll("[selected]").length || A.push("\\[" + ne + "*(?:value|" + te + ")"), e.querySelectorAll("[id~=" + U + "-]").length || A.push("~="), e.querySelectorAll(":checked").length || A.push(":checked"),
-                    e.querySelectorAll("a#" + U + "+*").length || A.push(".#.+[+~]")
-            }), a(function(e) {
-                var t = j.createElement("input");
-                t.setAttribute("type", "hidden"), e.appendChild(t).setAttribute("name", "D"), e.querySelectorAll("[name=d]").length && A.push("name" + ne + "*[*^$|!~]?="), e.querySelectorAll(":enabled").length || A.push(":enabled", ":disabled"), e.querySelectorAll("*,:x"), A.push(",.*:")
-            })), (w.matchesSelector = ye.test(B = M.matches || M.webkitMatchesSelector || M.mozMatchesSelector || M.oMatchesSelector || M.msMatchesSelector)) && a(function(e) {
-                w.disconnectedMatch = B.call(e, "div"), B.call(e, "[s!='']:x"), I.push("!=", ie)
-            }), A = A.length && new RegExp(A.join("|")), I = I.length && new RegExp(I.join("|")), t = ye.test(M.compareDocumentPosition), L = t || ye.test(M.contains) ? function(e, t) {
-                var n = 9 === e.nodeType ? e.documentElement : e,
-                    r = t && t.parentNode;
-                return e === r || !(!r || 1 !== r.nodeType || !(n.contains ? n.contains(r) : e.compareDocumentPosition && 16 & e.compareDocumentPosition(r)))
-            } : function(e, t) {
-                if (t)
-                    for (; t = t.parentNode;)
-                        if (t === e) return !0;
-                return !1
-            }, W = t ? function(e, t) {
-                if (e === t) return N = !0, 0;
-                var n = !e.compareDocumentPosition - !t.compareDocumentPosition;
-                return n || (n = (e.ownerDocument || e) === (t.ownerDocument || t) ? e.compareDocumentPosition(t) : 1, 1 & n || !w.sortDetached && t.compareDocumentPosition(e) === n ? e === j || e.ownerDocument === F && L(F, e) ? -1 : t === j || t.ownerDocument === F && L(F, t) ? 1 : T ? ee(T, e) - ee(T, t) : 0 : 4 & n ? -1 : 1)
-            } : function(e, t) {
-                if (e === t) return N = !0, 0;
-                var n, r = 0,
-                    a = e.parentNode,
-                    i = t.parentNode,
-                    s = [e],
-                    c = [t];
-                if (!a || !i) return e === j ? -1 : t === j ? 1 : a ? -1 : i ? 1 : T ? ee(T, e) - ee(T, t) : 0;
-                if (a === i) return o(e, t);
-                for (n = e; n = n.parentNode;) s.unshift(n);
-                for (n = t; n = n.parentNode;) c.unshift(n);
-                for (; s[r] === c[r];) r++;
-                return r ? o(s[r], c[r]) : s[r] === F ? -1 : c[r] === F ? 1 : 0
-            }, j) : j
+                    return e.className = "i", !e.getAttribute("className")
+                }), w.getElementsByTagName = a(function(e) {
+                    return e.appendChild(j.createComment("")), !e.getElementsByTagName("*").length
+                }), w.getElementsByClassName = ye.test(j.getElementsByClassName), w.getById = a(function(e) {
+                    return M.appendChild(e).id = U, !j.getElementsByName || !j.getElementsByName(U).length
+                }), w.getById ? (R.find.ID = function(e, t) {
+                    if ("undefined" != typeof t.getElementById && D) {
+                        var n = t.getElementById(e);
+                        return n ? [n] : []
+                    }
+                }, R.filter.ID = function(e) {
+                    var t = e.replace(Ee, we);
+                    return function(e) {
+                        return e.getAttribute("id") === t
+                    }
+                }) : (delete R.find.ID, R.filter.ID = function(e) {
+                    var t = e.replace(Ee, we);
+                    return function(e) {
+                        var n = "undefined" != typeof e.getAttributeNode && e.getAttributeNode("id");
+                        return n && n.value === t
+                    }
+                }), R.find.TAG = w.getElementsByTagName ? function(e, t) {
+                    return "undefined" != typeof t.getElementsByTagName ? t.getElementsByTagName(e) : w.qsa ? t.querySelectorAll(e) : void 0
+                } : function(e, t) {
+                    var n, r = [],
+                        a = 0,
+                        i = t.getElementsByTagName(e);
+                    if ("*" === e) {
+                        for (; n = i[a++];) 1 === n.nodeType && r.push(n);
+                        return r
+                    }
+                    return i
+                }, R.find.CLASS = w.getElementsByClassName && function(e, t) {
+                    if ("undefined" != typeof t.getElementsByClassName && D) return t.getElementsByClassName(e)
+                }, I = [], A = [], (w.qsa = ye.test(j.querySelectorAll)) && (a(function(e) {
+                    M.appendChild(e).innerHTML = "<a id='" + U + "'></a><select id='" + U + "-\r\\' msallowcapture=''><option selected=''></option></select>", e.querySelectorAll("[msallowcapture^='']").length && A.push("[*^$]=" + ne + "*(?:''|\"\")"), e.querySelectorAll("[selected]").length || A.push("\\[" + ne + "*(?:value|" + te + ")"), e.querySelectorAll("[id~=" + U + "-]").length || A.push("~="), e.querySelectorAll(":checked").length || A.push(":checked"), e.querySelectorAll("a#" + U + "+*").length || A.push(".#.+[+~]")
+                }), a(function(e) {
+                    var t = j.createElement("input");
+                    t.setAttribute("type", "hidden"), e.appendChild(t).setAttribute("name", "D"), e.querySelectorAll("[name=d]").length && A.push("name" + ne + "*[*^$|!~]?="), e.querySelectorAll(":enabled").length || A.push(":enabled", ":disabled"), e.querySelectorAll("*,:x"), A.push(",.*:")
+                })),
+                (w.matchesSelector = ye.test(B = M.matches || M.webkitMatchesSelector || M.mozMatchesSelector || M.oMatchesSelector || M.msMatchesSelector)) && a(function(e) {
+                    w.disconnectedMatch = B.call(e, "div"), B.call(e, "[s!='']:x"), I.push("!=", ie)
+                }), A = A.length && new RegExp(A.join("|")), I = I.length && new RegExp(I.join("|")), t = ye.test(M.compareDocumentPosition), L = t || ye.test(M.contains) ? function(e, t) {
+                    var n = 9 === e.nodeType ? e.documentElement : e,
+                        r = t && t.parentNode;
+                    return e === r || !(!r || 1 !== r.nodeType || !(n.contains ? n.contains(r) : e.compareDocumentPosition && 16 & e.compareDocumentPosition(r)))
+                } : function(e, t) {
+                    if (t)
+                        for (; t = t.parentNode;)
+                            if (t === e) return !0;
+                    return !1
+                }, W = t ? function(e, t) {
+                    if (e === t) return N = !0, 0;
+                    var n = !e.compareDocumentPosition - !t.compareDocumentPosition;
+                    return n || (n = (e.ownerDocument || e) === (t.ownerDocument || t) ? e.compareDocumentPosition(t) : 1, 1 & n || !w.sortDetached && t.compareDocumentPosition(e) === n ? e === j || e.ownerDocument === F && L(F, e) ? -1 : t === j || t.ownerDocument === F && L(F, t) ? 1 : T ? ee(T, e) - ee(T, t) : 0 : 4 & n ? -1 : 1)
+                } : function(e, t) {
+                    if (e === t) return N = !0, 0;
+                    var n, r = 0,
+                        a = e.parentNode,
+                        i = t.parentNode,
+                        s = [e],
+                        c = [t];
+                    if (!a || !i) return e === j ? -1 : t === j ? 1 : a ? -1 : i ? 1 : T ? ee(T, e) - ee(T, t) : 0;
+                    if (a === i) return o(e, t);
+                    for (n = e; n = n.parentNode;) s.unshift(n);
+                    for (n = t; n = n.parentNode;) c.unshift(n);
+                    for (; s[r] === c[r];) r++;
+                    return r ? o(s[r], c[r]) : s[r] === F ? -1 : c[r] === F ? 1 : 0
+                }, j) : j
         }, t.matches = function(e, n) {
             return t(e, null, null, n)
         }, t.matchesSelector = function(e, n) {
@@ -4573,10 +4557,9 @@ var App = {};
             var t, n = re.head || fe("head")[0] || re.documentElement;
             return {
                 send: function(r, a) {
-                    t = re.createElement("script"), t.async = !0,
-                        e.scriptCharset && (t.charset = e.scriptCharset), t.src = e.url, t.onload = t.onreadystatechange = function(e, n) {
-                            (n || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t.parentNode && t.parentNode.removeChild(t), t = null, n || a(200, "success"))
-                        }, n.insertBefore(t, n.firstChild)
+                    t = re.createElement("script"), t.async = !0, e.scriptCharset && (t.charset = e.scriptCharset), t.src = e.url, t.onload = t.onreadystatechange = function(e, n) {
+                        (n || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t.parentNode && t.parentNode.removeChild(t), t = null, n || a(200, "success"))
+                    }, n.insertBefore(t, n.firstChild)
                 },
                 abort: function() {
                     t && t.onload(undefined, !0)
@@ -7355,7 +7338,8 @@ function(e) {
 
     function dn(e, t, n) {
         var r = e.memoizedState;
-        t = t(n, r), r = null === t || void 0 === t ? r : Br({}, r, t), e.memoizedState = r, null !== (e = e.updateQueue) && 0 === e.expirationTime && (e.baseState = r)
+        t = t(n, r), r = null === t || void 0 === t ? r : Br({}, r, t), e.memoizedState = r,
+            null !== (e = e.updateQueue) && 0 === e.expirationTime && (e.baseState = r)
     }
 
     function pn(e, t, n, r, a, i) {
@@ -10165,13 +10149,12 @@ function(e, t) {
                 }
             };
         l.handleMount = function(e) {
-                var t = undefined;
-                e && e.target && (t = e.target), l.mountComponents(t)
-            }, l.handleUnmount = function(e) {
-                var t = undefined;
-                e && e.target && (t = e.target), l.unmountComponents(t)
-            }, "undefined" != typeof window && l.detectEvents(),
-            self.ReactRailsUJS = l, e.exports = l
+            var t = undefined;
+            e && e.target && (t = e.target), l.mountComponents(t)
+        }, l.handleUnmount = function(e) {
+            var t = undefined;
+            e && e.target && (t = e.target), l.unmountComponents(t)
+        }, "undefined" != typeof window && l.detectEvents(), self.ReactRailsUJS = l, e.exports = l
     }, function(e) {
         e.exports = {
             setup: function(e) {
@@ -11364,8 +11347,7 @@ var Ban = function(e) {
             }
         }
         return function(t, n, r) {
-            return n && e(t.prototype, n),
-                r && e(t, r), t
+            return n && e(t.prototype, n), r && e(t, r), t
         }
     }(),
     _get = function(e, t, n) {
@@ -12525,7 +12507,8 @@ var MatchButton = function(e) {
             }
             var l = Object.getPrototypeOf(a);
             if (null === l) return undefined;
-            e = l, t = i, n = o, r = !0, s = l = undefined
+            e = l, t = i, n = o, r = !0,
+                s = l = undefined
         }
     },
     MeetButtonSkeleton = function(e) {
@@ -15030,19 +15013,19 @@ var MessageNotifications = function(e) {
         }, {
             key: "action",
             value: function() {
-                this.props.data.data.unit && (App.params = this.props.data.data.unit,
-                    UserProfileReact ? UserProfileReact.load(this.props.data.data.unit.author.id) : ReactDOM.render(React.createElement(UserProfile, {
-                        id: this.props.data.data.unit.post.user_id || this.props.data.data.unit.author.id
-                    }), document.getElementById("ui-hatch")))
+                this.props.data.data.unit && (App.params = this.props.data.data.unit, UserProfileReact ? UserProfileReact.load(this.props.data.data.unit.author.id) : ReactDOM.render(React.createElement(UserProfile, {
+                    id: this.props.data.data.unit.post.user_id || this.props.data.data.unit.author.id
+                }), document.getElementById("ui-hatch")))
             }
         }, {
             key: "friend_request_accept",
             value: function() {
                 $.ajax({
-                    type: "GET",
-                    url: "/friends_accept?friend_id=" + this.props.data.data.sender.id + "&notification_id=" + this.props.data.id,
-                    dataType: "json"
-                }), $("#" + this.state.id).remove(), this.update_notifications(1e3)
+                        type: "GET",
+                        url: "/friends_accept?friend_id=" + this.props.data.data.sender.id + "&notification_id=" + this.props.data.id,
+                        dataType: "json"
+                    }),
+                    $("#" + this.state.id).remove(), this.update_notifications(1e3)
             }
         }, {
             key: "friend_request_reject",
@@ -17213,13 +17196,13 @@ var Room = function(e) {
     }, {
         key: "send_picture",
         value: function(e) {
-            this.append({
+            App.user.gold && e.startsWith("data:image/") && (this.append({
                 messages: [],
                 user: App.user,
                 picture: e
             }), App.room.client.speak({
                 picture: e
-            }), this.scroll()
+            }), this.scroll())
         }
     }, {
         key: "input",
@@ -17583,26 +17566,25 @@ var RoomChannelSelect = function(e) {
             key: "join",
             value: function(e) {
                 console.log("joined strangers", e), e.members.length >= e.channel.capacity || (App.webrtc.client && this.voice_disconnect(), this.expand(!1), RoomClient.setState({
-                        messages: []
-                    }), RoomClient.updated = function() {
-                        this.setState({
-                            current_channel: e.channel
-                        }), $.ajax({
-                            type: "GET",
-                            url: "channel_json?id=" + e.channel.id,
-                            dataType: "json",
-                            success: function(e) {
-                                console.log("loading chat", e), RoomChannelMembersClient.setState({
-                                    members: e.members
-                                });
-                                for (var t = 0; t < e.messages.length; t++) RoomClient.append(e.messages[t]);
-                                RoomClient.scroll()
-                            }.bind(this)
-                        }), App.room.join("channel" + e.channel.id), setTimeout(function() {
+                    messages: []
+                }), RoomClient.updated = function() {
+                    this.setState({
+                        current_channel: e.channel
+                    }), $.ajax({
+                        type: "GET",
+                        url: "channel_json?id=" + e.channel.id,
+                        dataType: "json",
+                        success: function(e) {
+                            console.log("loading chat", e), RoomChannelMembersClient.setState({
+                                members: e.members
+                            });
+                            for (var t = 0; t < e.messages.length; t++) RoomClient.append(e.messages[t]);
                             RoomClient.scroll()
-                        }, 0), "voice" == e.channel.channel_type && this.voice_connect(e)
-                    }.bind(this), RoomClient.updated(),
-                    RoomClient.updated = function() {})
+                        }.bind(this)
+                    }), App.room.join("channel" + e.channel.id), setTimeout(function() {
+                        RoomClient.scroll()
+                    }, 0), "voice" == e.channel.channel_type && this.voice_connect(e)
+                }.bind(this), RoomClient.updated(), RoomClient.updated = function() {})
             }
         }, {
             key: "voice_connect",
@@ -21706,67 +21688,6 @@ var UserProfile = function(e) {
             e = l, t = i, n = o, r = !0, s = l = undefined
         }
     },
-    GAUnits = {
-        served: 0,
-        limit: 3
-    },
-    GA = function(e) {
-        function t(e) {
-            _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e)
-        }
-        return _inherits(t, e), _createClass(t, [{
-            key: "componentDidMount",
-            value: function() {
-                GAUnits.served < GAUnits.limit && !App.user.gold && (window.adsbygoogle = window.adsbygoogle || []).push({}), GAUnits.served++
-            }
-        }, {
-            key: "render",
-            value: function() {
-                window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-                return GAUnits.served >= GAUnits.limit ? null : App.user.gold ? null : React.createElement("div", {
-                    style: {
-                        maxHeight: "400px"
-                    }
-                }, React.createElement("ins", {
-                    "data-def": !0,
-                    className: "adsbygoogle",
-                    style: this.props.style,
-                    "data-ad-client": this.props.client,
-                    "data-ad-slot": this.props.slot,
-                    "data-ad-layout": this.props.layout,
-                    "data-ad-format": this.props.format
-                }))
-            }
-        }]), t
-    }(React.Component),
-    _createClass = function() {
-        function e(e, t) {
-            for (var n = 0; n < t.length; n++) {
-                var r = t[n];
-                r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
-            }
-        }
-        return function(t, n, r) {
-            return n && e(t.prototype, n), r && e(t, r), t
-        }
-    }(),
-    _get = function(e, t, n) {
-        for (var r = !0; r;) {
-            var a = e,
-                i = t,
-                o = n;
-            r = !1, null === a && (a = Function.prototype);
-            var s = Object.getOwnPropertyDescriptor(a, i);
-            if (s !== undefined) {
-                if ("value" in s) return s.value;
-                var c = s.get;
-                return c === undefined ? undefined : c.call(o)
-            }
-            var l = Object.getPrototypeOf(a);
-            if (null === l) return undefined;
-            e = l, t = i, n = o, r = !0, s = l = undefined
-        }
-    },
     VideoModeration = function(e) {
         function t(e) {
             _classCallCheck(this, t), _get(Object.getPrototypeOf(t.prototype), "constructor", this).call(this, e), this.state = {
@@ -22850,11 +22771,10 @@ window.addEventListener("load", function() {
                 }, n.writeRtpDescription = function(e, t) {
                     var r = "";
                     r += "m=" + e + " ", r += t.codecs.length > 0 ? "9" : "0", r += " UDP/TLS/RTP/SAVPF ", r += t.codecs.map(function(e) {
-                            return e.preferredPayloadType !== undefined ? e.preferredPayloadType : e.payloadType
-                        }).join(" ") + "\r\n",
-                        r += "c=IN IP4 0.0.0.0\r\n", r += "a=rtcp:9 IN IP4 0.0.0.0\r\n", t.codecs.forEach(function(e) {
-                            r += n.writeRtpMap(e), r += n.writeFmtp(e), r += n.writeRtcpFb(e)
-                        });
+                        return e.preferredPayloadType !== undefined ? e.preferredPayloadType : e.payloadType
+                    }).join(" ") + "\r\n", r += "c=IN IP4 0.0.0.0\r\n", r += "a=rtcp:9 IN IP4 0.0.0.0\r\n", t.codecs.forEach(function(e) {
+                        r += n.writeRtpMap(e), r += n.writeFmtp(e), r += n.writeRtcpFb(e)
+                    });
                     var a = 0;
                     return t.codecs.forEach(function(e) {
                         e.maxptime > a && (a = e.maxptime)
@@ -23824,8 +23744,7 @@ window.addEventListener("load", function() {
                         }, 4e3), arguments.length > 1 && "function" == typeof arguments[1] && e.setTimeout(arguments[1], 0), Promise.resolve()
                     }, s.prototype.close = function() {
                         this.transceivers.forEach(function(e) {
-                            e.iceTransport && e.iceTransport.stop(),
-                                e.dtlsTransport && e.dtlsTransport.stop(), e.rtpSender && e.rtpSender.stop(), e.rtpReceiver && e.rtpReceiver.stop()
+                            e.iceTransport && e.iceTransport.stop(), e.dtlsTransport && e.dtlsTransport.stop(), e.rtpSender && e.rtpSender.stop(), e.rtpReceiver && e.rtpReceiver.stop()
                         }), this._updateSignalingState("closed")
                     }, s.prototype._updateSignalingState = function(e) {
                         this.signalingState = e;
@@ -24905,8 +24824,9 @@ window.addEventListener("load", function() {
                             }, window.RTCPeerConnection.prototype._transceive = function(e, t, r) {
                                 var a = this._getCommonCapabilities(e.localCapabilities, e.remoteCapabilities);
                                 t && e.rtpSender && (a.encodings = e.sendEncodingParameters, a.rtcp = {
-                                    cname: n.localCName
-                                }, e.recvEncodingParameters.length && (a.rtcp.ssrc = e.recvEncodingParameters[0].ssrc), e.rtpSender.send(a)), r && e.rtpReceiver && ("video" === e.kind && e.recvEncodingParameters && e.recvEncodingParameters.forEach(function(e) {
+                                        cname: n.localCName
+                                    }, e.recvEncodingParameters.length && (a.rtcp.ssrc = e.recvEncodingParameters[0].ssrc),
+                                    e.rtpSender.send(a)), r && e.rtpReceiver && ("video" === e.kind && e.recvEncodingParameters && e.recvEncodingParameters.forEach(function(e) {
                                     delete e.rtx
                                 }), a.encodings = e.recvEncodingParameters, a.rtcp = {
                                     cname: e.cname
@@ -25854,8 +25774,7 @@ window.addEventListener("load", function() {
                         for (var e = 0; e < this.prevBufferLen; e++) this.callbackBuffer[e] && this.callbackBuffer[e]();
                         this.writeBuffer.splice(0, this.prevBufferLen), this.callbackBuffer.splice(0, this.prevBufferLen), this.prevBufferLen = 0, 0 == this.writeBuffer.length ? this.emit("drain") : this.flush()
                     }, r.prototype.flush = function() {
-                        "closed" != this.readyState && this.transport.writable && !this.upgrading && this.writeBuffer.length && (s("flushing %d packets in socket", this.writeBuffer.length), this.transport.send(this.writeBuffer), this.prevBufferLen = this.writeBuffer.length,
-                            this.emit("flush"))
+                        "closed" != this.readyState && this.transport.writable && !this.upgrading && this.writeBuffer.length && (s("flushing %d packets in socket", this.writeBuffer.length), this.transport.send(this.writeBuffer), this.prevBufferLen = this.writeBuffer.length, this.emit("flush"))
                     }, r.prototype.write = r.prototype.send = function(e, t) {
                         return this.sendPacket("message", e, t), this
                     }, r.prototype.sendPacket = function(e, t, n) {
@@ -25914,7 +25833,8 @@ window.addEventListener("load", function() {
             }],
             23: [function(e, t) {
                 function n(e) {
-                    this.path = e.path, this.hostname = e.hostname, this.port = e.port, this.secure = e.secure, this.query = e.query, this.timestampParam = e.timestampParam, this.timestampRequests = e.timestampRequests, this.readyState = "", this.agent = e.agent || !1, this.socket = e.socket, this.enablesXDR = e.enablesXDR, this.pfx = e.pfx, this.key = e.key, this.passphrase = e.passphrase, this.cert = e.cert, this.ca = e.ca, this.ciphers = e.ciphers, this.rejectUnauthorized = e.rejectUnauthorized
+                    this.path = e.path, this.hostname = e.hostname, this.port = e.port, this.secure = e.secure, this.query = e.query, this.timestampParam = e.timestampParam, this.timestampRequests = e.timestampRequests, this.readyState = "", this.agent = e.agent || !1, this.socket = e.socket, this.enablesXDR = e.enablesXDR, this.pfx = e.pfx, this.key = e.key,
+                        this.passphrase = e.passphrase, this.cert = e.cert, this.ca = e.ca, this.ciphers = e.ciphers, this.rejectUnauthorized = e.rejectUnauthorized
                 }
                 var r = e("engine.io-parser"),
                     a = e("component-emitter");
@@ -28518,7 +28438,8 @@ window.addEventListener("load", function() {
                                     sid: n.sdpSessionID,
                                     role: n._role(),
                                     direction: "outgoing"
-                                })), u.sdp.split("\r\n").forEach(function(e) {
+                                })),
+                                u.sdp.split("\r\n").forEach(function(e) {
                                     0 === e.indexOf("a=candidate:") && n._checkLocalCandidate(e)
                                 }), !n.assumeSetLocalSuccess) {
                                 var i = o(u);
@@ -30742,7 +30663,8 @@ window.addEventListener("load", function() {
                         })
                     }), this.config.debug && this.on("*", function(e, t, r) {
                         var a;
-                        a = n.config.logger === i ? console : n.logger, a.log("event:", e, t, r)
+                        a = n.config.logger === i ? console : n.logger,
+                            a.log("event:", e, t, r)
                     })
                 }
                 var r = e("util"),
