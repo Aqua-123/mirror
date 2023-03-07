@@ -22474,7 +22474,7 @@ window.addEventListener("load", function() {
                     }
                 })
             }
-        }, App.temp.check(), setInterval(App.temp.check, 24e4), $(window).focus(function() {
+        }, App.temp.check(), setInterval(App.temp.check, 48e4), $(window).focus(function() {
             return window.user_focus = !0
         }).blur(function() {
             return window.user_focus = !1
